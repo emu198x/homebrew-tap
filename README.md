@@ -1,6 +1,6 @@
 # Emu198x Homebrew tap
 
-One formula per released machine. Once the first formulae are published:
+One formula per released machine:
 
 ```sh
 brew install emu198x/tap/emu198x-spectrum
