@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.32.3"
+  version "0.32.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "6ff1d68343ba94c64c77a2d62940ff0d3f3e8b60ca9a5f39bc035965336c479d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "19334c10c6699874923850148d28ecc46429782e6cf0d0d1d96198745760324b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "abf497de8d180025b89ef2f118daa593c580057b92b89d8afffcb12352e5295f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "049eaffc7654da16dac999171c05ebdb202e5dad9b7168150ec1719cfd260a21"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d7d7b530b007810bc490e2b939bc27cbf757d21ef4efdbc1982dc7b5ae06ba8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6448ca5b386cd5a6fa1f6afba5bdf5680b1b542c22561f4242f770ce0d102c81"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "56072673b03123ac37774e1deca64d95ac66a4dad42a1eab3234e969f87ce437"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2603f7b93c6dc3f231452ea3874e2802207ee651cf1beb50a5530efbff616eb0"
     end
   end
   license "GPL-2.0-or-later"
