@@ -1,36 +1,36 @@
 class Emu198xDragon < Formula
   desc "Native Dragon 32/64 verifier with interactive UI, headless harness, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-dragon-aarch64-apple-darwin.tar.gz"
-      sha256 "413625754370826133a8b39a448fea5b55a81a72d26e518ea661e5fa161c6d06"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-dragon-aarch64-apple-darwin.tar.gz"
+      sha256 "1408f15f33ed53523514dbb758da59f81936be5c4d29bb851138d498202d9ebb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-dragon-x86_64-apple-darwin.tar.gz"
-      sha256 "e33c24f9e32e005d1df217d831dafd8bef9f9f8b0e53e3d53f9d392d8a4898c0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-dragon-x86_64-apple-darwin.tar.gz"
+      sha256 "10f8abbce4e67a54672935aba7ca2b0ddc8c174d079203a9ac82e410ef5b561f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-dragon-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "be69fa1c0e08e7cf11e6a48604083e1413b4cd538df414afcf203dbf18fb1505"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-dragon-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "856e122143da204751ba6bd8cce66b7a011ad72b73bee320e013e689320436c0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-dragon-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0bd51c3f126881b5152a8865bbd58b11a2a8c214f48247b0fd954c3164448f9a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-dragon-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f3a7e147839e752573b0654be39b0021484419ba5d14ed108a1b7326889a6a37"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
