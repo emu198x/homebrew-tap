@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.32.4"
+  version "0.32.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "0da52b9f4de8850d395de6357d32089afbc6690db245d6bc2753cec3b6bcdc9a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "8e4ab6d079b04d7d3a6b465da4ac8e6b5b4c46c5adf4ad05e9c45e25b2c0cd61"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "c6f1a61bb40c90ba388e4c24f8c62ec7fbafb597c54e924f9ce0e05c1b9f3330"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "f86d30566001dcd09419b40da6aef223fa2298e2ca5866c4e56b4fa2db6e93b5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "12e675b24c4ff38e80367f7fb8ed6cbf3abc34ef9bf4b163ea2ed225c5474500"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "172ff4f24462a0a8c071d2542a0a8f545b3e13ed1cf7bd3b5d4bdf555e14bd70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54e541814348120dce85327de6b7e09e341896720c927d3d391fa0c5da5f696b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "240fe96d283425cb5f9a493ee2824df700bffaf097edb6f4b79fdacd087ec329"
     end
   end
   license "GPL-2.0-or-later"
