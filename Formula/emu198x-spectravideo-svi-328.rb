@@ -1,25 +1,25 @@
 class Emu198xSpectravideoSvi328 < Formula
   desc "Spectravideo SVI-328 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + AY-3-8910 + 8255 PPI"
   homepage "https://emu198x.github.io/"
-  version "0.32.2"
+  version "0.32.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-aarch64-apple-darwin.tar.gz"
-      sha256 "e54891ed09cf09c556ab7852f52a3f4314eab7720fa0395b8fbcbe3e14f249a9"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-spectravideo-svi-328-aarch64-apple-darwin.tar.gz"
+      sha256 "b909208d44e8aeefc479cc1d3837e2feaa72b81d81965b731c161c6bbddeda19"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-x86_64-apple-darwin.tar.gz"
-      sha256 "2aec873886134a45945ce37c65075c4316c513524b535016b5f10968a2486c88"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-spectravideo-svi-328-x86_64-apple-darwin.tar.gz"
+      sha256 "0f9ecd87739a6b1dbc1d6a4ebd78b4ccf03d1a79082ba3f58e022277bac92ac1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "56fdb65f62cf499a1e33f9b5708b6214234a9dba359265b7736acee0ff58f626"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-spectravideo-svi-328-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "81526cbb662a8e0d791db8202ba6e47f854e599ef0d81ea42fbf46fff9be778a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3e3ef498891ab54260f03d28f1af8b1506297639d388487963847eb8b06a8823"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-spectravideo-svi-328-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ad09919ff1c12afd91347ec6f71d603448fe292c72a9e3334951b3ff0ad48085"
     end
   end
   license "GPL-2.0-or-later"
