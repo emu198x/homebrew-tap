@@ -1,25 +1,25 @@
 class Emu198xC64 < Formula
   desc "Native Commodore 64 verifier with interactive UI, headless script, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.32.3"
+  version "0.32.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-c64-aarch64-apple-darwin.tar.gz"
-      sha256 "7c3131aa7c486d6dd134a0fe23cc7d59ccd5df6e076a8ce65c5292d0b76dbe0d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-c64-aarch64-apple-darwin.tar.gz"
+      sha256 "369001c45cde73f7fd2aee800079546440b8f8695bd20eb9596696861ef22a40"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-c64-x86_64-apple-darwin.tar.gz"
-      sha256 "c97005a7c9c5890733e20b21a2738795dcbd254b4cf8e7b57b028596b16c8c2f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-c64-x86_64-apple-darwin.tar.gz"
+      sha256 "6920cca6fb7b55b0efacd49dcbea629713234614b8440ea2514bb656fa5114f2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-c64-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "70765ea7a2beb2aeea55ad2be183b8e0cf279709e411df600b336d040b3e4d15"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-c64-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7ed2ffe815c78664aa1b83eb98a99ab443097a82a4b566202f6605b2f9fcf6df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-c64-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7c9827830d50cfd413ec05c9bf1888af5f2c1f2fc2680d7685f2e490dd0e141b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-c64-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c02ae85fbf87340ccf55168981520506c43cc17e13b9e3b0c73edec679eb0e6b"
     end
   end
   license "GPL-2.0-or-later"
