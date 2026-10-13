@@ -1,36 +1,36 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "903a13c0027ab07b9f3e7bac24a6f6666b59664f5b4543872748dee73d53bca6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "769d7ecb461e85fc6803bffd827ed0d2d6d2cf42b22b0e390e8fe8e1daa04daf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "c9085d242da9b6237a68560bd4263babe76081bda93b6c3aaf51861fd9de844c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "ce0c06183c4c33be21c3efeb81433fd7ff9e42e182d2d85a365af3e0262460be"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2046bf7cdd02bf3a45c29c7ed7a165d781a26a5a6e8b6cd4cee0a5e88f4ebff8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "390e0c39fcd14994e438c450576a5b39e0edbd23362643f7c4dfeb8996d4f3de"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4ee975da46903a0264357ef8c8b40666eff512a23692e47d56b440d3e1b3c925"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "da3a1e0a21aa69853af153f047df42427cc446694eac99c79e67ad5bc0826ba7"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
