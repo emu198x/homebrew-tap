@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.32.4"
+  version "0.32.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "1a90a69ee170537dc59f0e075a4e81a2038ce259a01bee0e36c91c0633d447f0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "3b79736e3ae0c4f78a60b4c7dabc980aec187fb0a6bf29081afc46170d54ce50"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "0b0f54e7c8a98d387bf3b09737f58bd0d2393f0e1e2c4aeb0b7ffeb3e0d9a871"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "b4ad35ac89cb6359a31245a3440a1df6ec8e64b9a33811b505ead75223fd4f41"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b605ab0feee6ecadff62b4de9d6ad56daef98bc9110fe242dee9f1f1699fe5f3"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8288f8ff8f1d9e3f4d56ab4e31718691961b671cc8a70674ffea78e2bbcfff42"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f6e6326361c013049a16ed5bd6b78903ba80efc344073fcb0a538ec70f774d2f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f79cb3ecba0fee9800367d452ffa6ea5236fb9abcf0c1ec3e5b31639eb2bbdd4"
     end
   end
   license "GPL-2.0-or-later"
