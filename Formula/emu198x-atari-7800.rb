@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.32.2"
+  version "0.32.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "886d7db1081b0ed13e1cedf8492cceaa6153ec389b1f57438ae4809b5bd69a82"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "7b91bd9efa2bfbc6d995e7a62c71dcc54ea3aca8cd063280b4ce19da4454c44f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "1aeb4d0f734a0c1b0ce6171a47e5449f438efb2ec6d1166d5c66c643dc9dc08c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "fab75771ab317f31a24a9fefaf974076d8493bf569c8e3201d773cce5c7eb1cd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "02f2f91c39851e2b077393997e591103a12a9c4b51335e92e0d5b63a152bcd00"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "58a5de6fece230f2be76743d77f7ccaa16d9a583d64275d6baa118738e9afc50"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "137dffae69c6de424b8fdbaeccbc601869701f1c32721f56a4894a86043bd413"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e139ddf9be6680e8a3d821de2f8a910ea5f00b394694ae5afc5e11923dae5941"
     end
   end
   license "GPL-2.0-or-later"
