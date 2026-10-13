@@ -1,36 +1,36 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "8d058882b3fb30a3b1da7947d87828ee78e5293f7442676e924fad9bb2539fe2"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "886d7db1081b0ed13e1cedf8492cceaa6153ec389b1f57438ae4809b5bd69a82"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "9fdd60ef0d35215b1af51c6f3e3ef6fa17c207928bd4448c984ab17088462e06"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "1aeb4d0f734a0c1b0ce6171a47e5449f438efb2ec6d1166d5c66c643dc9dc08c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "82bc1a7af371718e0a6f3323bd8215407c34bd0e4d73dc25367a555230812155"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "02f2f91c39851e2b077393997e591103a12a9c4b51335e92e0d5b63a152bcd00"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0ea75aa9fb1efa4c52eac2e457918053ad47834eec3cea1241d2a1c86b19591c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "137dffae69c6de424b8fdbaeccbc601869701f1c32721f56a4894a86043bd413"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
