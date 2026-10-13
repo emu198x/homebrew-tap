@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.29.0"
+  version "0.32.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "15e4c811cde25399dae55cf79d2491b51aec94f364cd073458e8fe78d49bc5b8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "903a13c0027ab07b9f3e7bac24a6f6666b59664f5b4543872748dee73d53bca6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "bce83dd558e5aa14348a82a2cdb66ed0dbecfa39e5aef2de6c1c3c7753fa3258"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "c9085d242da9b6237a68560bd4263babe76081bda93b6c3aaf51861fd9de844c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "901c32ef19511d73890018aa9aae248b881bf61424e74420255d6eafb6725d41"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2046bf7cdd02bf3a45c29c7ed7a165d781a26a5a6e8b6cd4cee0a5e88f4ebff8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "226c2181f424040efe93d395e06d4c5423d8dd7d14c0b7af7eaa1f7f574861f0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4ee975da46903a0264357ef8c8b40666eff512a23692e47d56b440d3e1b3c925"
     end
   end
   license "GPL-2.0-or-later"

@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.29.0"
+  version "0.32.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "3e50ad860940f8b3eb68603db0e1914eb330b4fc379f4d8a3d1b3dc172dc1d12"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "8d058882b3fb30a3b1da7947d87828ee78e5293f7442676e924fad9bb2539fe2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "7aa826298f33240ebe43458a97b8f1a7cdc063e6e9f8c36f22f288de69cb14dd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "9fdd60ef0d35215b1af51c6f3e3ef6fa17c207928bd4448c984ab17088462e06"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1f0565183588de2014e8597623edcb2f8027d21f73d64093fd059bae5ab027d5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "82bc1a7af371718e0a6f3323bd8215407c34bd0e4d73dc25367a555230812155"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.29.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0ca62a4d1612c69f7ac398e4a6de537613aa591da7030b2ff8f751888a58d9eb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0ea75aa9fb1efa4c52eac2e457918053ad47834eec3cea1241d2a1c86b19591c"
     end
   end
   license "GPL-2.0-or-later"
