@@ -1,36 +1,36 @@
 class Emu198xCommodorePet < Formula
   desc "Commodore PET headless runner with shell-backed script + MCP parity — 6502 + 6845 CRTC + 6520 + 6522"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-commodore-pet-aarch64-apple-darwin.tar.gz"
-      sha256 "a3d009f56df33802ba7f10b23070eeda5cc0fb0e468ca44f918440554f30c6fb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-commodore-pet-aarch64-apple-darwin.tar.gz"
+      sha256 "cde705f5bd3bbe5b33b0719b3160271ba2512ff8734640eb8c04a951daf4f1ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-commodore-pet-x86_64-apple-darwin.tar.gz"
-      sha256 "5c81e2c994a4a489130d3132cb6bcd8a244d54497fbac6c0cec144f8469a90bd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-commodore-pet-x86_64-apple-darwin.tar.gz"
+      sha256 "02bc8136dbd4d13fc6536920b22fc10c645422bbe28bedefb697b403bb7805a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-commodore-pet-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e50a9f6cb0b1ac4c93bbad25fc4c2ad833147fd67ec7880095d31140a4baa89f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-commodore-pet-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cf69d592f20a85b9b62139987c96e29db76ba9a55a03588dee49801da01c1ab5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-commodore-pet-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d3d6939cc6bd2ab238d32b79a9cc7e93688a364050939b9339c81a0617716db7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-commodore-pet-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ee179820de43bc943e6efb9b9d70bf50ec5c0ecd88f11c925e740067f4027355"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
