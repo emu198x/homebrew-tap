@@ -1,36 +1,36 @@
 class Emu198xC64 < Formula
   desc "Native Commodore 64 verifier with interactive UI, headless script, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-c64-aarch64-apple-darwin.tar.gz"
-      sha256 "833da86d1a37a4e0400e6206180281a6a21f55ec24d44ce96d6f28749d9c61c6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-c64-aarch64-apple-darwin.tar.gz"
+      sha256 "efbc8a10d61a77c5b16d0e70d977701e8bfb58ef1ad2439bc66916ffb7c954ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-c64-x86_64-apple-darwin.tar.gz"
-      sha256 "1fce7a76c0f4f1c2d41ef45bad37692f13ef6aa257c94ce3e8ee56627073b1da"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-c64-x86_64-apple-darwin.tar.gz"
+      sha256 "ddc41b532d587e0e9763a05dbb04e837034e2c1502fb7e1d5d44345aa24d53d7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-c64-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "af872c57ec4284bbfb4135f44418fbaeb5f3a7831d9c717bfee3363211d1d3bc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-c64-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "91762a6a8195aab09d85827a74b956f826bd89189486e990863297f35ee5d50b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-c64-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2f9d294a90ecb748b1fe1c8d078c8df83d08b8a5d89e5e76e2e02fb94f4aa5f6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-c64-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "effbce1286d936f55a56a4e56fc1f41dc1bef45667747fcbd3a6c14c8c603f57"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
