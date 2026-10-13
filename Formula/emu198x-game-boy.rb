@@ -1,36 +1,36 @@
 class Emu198xGameBoy < Formula
   desc "Native Game Boy verifier with interactive UI, headless script, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-game-boy-aarch64-apple-darwin.tar.gz"
-      sha256 "7273d519ef20dec56d4c662265c0acdc126bb6d2ecaf00ac2c9a4ebb9ebc28a6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-game-boy-aarch64-apple-darwin.tar.gz"
+      sha256 "412e316f03b3c9dbae591a72c6aa9d5990efb21b817e065f109022ad83ef845f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-game-boy-x86_64-apple-darwin.tar.gz"
-      sha256 "6ad8ce27fca1d70a4a50f48ca14fd39f34c97cd7f9cd650de1355377eb175125"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-game-boy-x86_64-apple-darwin.tar.gz"
+      sha256 "b0a67c06cb7a634c793920ddc26dae9c374242cd019620e07886233e926e5871"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-game-boy-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "df16a4ffd9425dbb9b70b1a0c07dac20f999d3fd54e9a266e2eea171ec830eb3"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-game-boy-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e318e8c8100650de7fe494de12dba644bfabc239446e9adfe04f515e80be1311"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-game-boy-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "696d2b71adf749fa3082bf91a3ee6e731e51f7029111945fb8f2d637d3727a17"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-game-boy-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fa2643bb27626ec4be771241c0646413a12e65bdb6b5f9c1d8d200ffa90ef4cb"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
