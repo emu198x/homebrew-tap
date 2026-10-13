@@ -1,36 +1,36 @@
 class Emu198xSpectrum < Formula
   desc "Sinclair ZX Spectrum emulator with native UI, scripts and MCP"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectrum-aarch64-apple-darwin.tar.gz"
-      sha256 "019783c2b8425633f91a4757943497969103011ec00b61778fbbfd8e8639b0cf"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectrum-aarch64-apple-darwin.tar.gz"
+      sha256 "605696c0273b72b461c047fe2b247631cd1be5016a34364191f1669ceacb7d7c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectrum-x86_64-apple-darwin.tar.gz"
-      sha256 "8e8d459de89cfd451e8a771066ad690c9648e55f0a7ecae64bcdb63c1833eabc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectrum-x86_64-apple-darwin.tar.gz"
+      sha256 "49b366cdab6337e9262d34f4d8e541a25a712189e75cf1e18a1f6e6f67e60058"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectrum-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8594dc5a2e334a0d851f3d20eccfd14c07d8f7b6ea9bc3cc93fe9a385021b25b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectrum-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8c675bc9db729857718fe9e96c65100bf36f5e732ee7a458e05fe5af87200676"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectrum-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fce734c582d34fc7a2653c66e32ccf7e3fed750e639d9ae6742314063cba5095"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectrum-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "97209b3f593b94b8574365a8cdf7862814580c1fb9e83eab211f5480c9601866"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
