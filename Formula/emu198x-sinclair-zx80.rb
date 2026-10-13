@@ -1,36 +1,36 @@
 class Emu198xSinclairZx80 < Formula
   desc "Sinclair ZX80 headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sinclair-zx80-aarch64-apple-darwin.tar.gz"
-      sha256 "bfa7f589f16a6165f031b559bed02a0410d43e8708408bac505fb8c579cf0ced"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sinclair-zx80-aarch64-apple-darwin.tar.gz"
+      sha256 "556b99fa92245eb5a129fb002769c94f616ec86fc5ebf08e7156cf8b1f3d9746"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sinclair-zx80-x86_64-apple-darwin.tar.gz"
-      sha256 "fc2a9f47979d835be0a40ff3c0b2f169c06f0fbb73f185de8d7bac59bf1c948e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sinclair-zx80-x86_64-apple-darwin.tar.gz"
+      sha256 "cf6e2da83b9cce633a9751dccb3e029b79432f98d888060c45bd5ed3ce9e2046"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sinclair-zx80-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6115db6925542379f4f615dcd1f0856642f178b771b154fbfa1ce0c7dea22b6d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sinclair-zx80-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fe25857f9916a3848a61f9fe9e0c391bdb17e726a7ff07294106476f09f624dc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sinclair-zx80-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "43fce1b87d3b33f3751c67458c2f0e7f8f51ff3a0e0e5eb57938fa19f918d60c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sinclair-zx80-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4126bb96598d1bd31dfd47eed96b5a506dedbb1c5e2a81dd56df8c12cc8f63c5"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
