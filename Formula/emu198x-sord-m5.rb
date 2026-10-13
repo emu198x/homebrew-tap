@@ -1,36 +1,36 @@
 class Emu198xSordM5 < Formula
   desc "Sord M5 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sord-m5-aarch64-apple-darwin.tar.gz"
-      sha256 "70bf80abf61b580f8ad7a15fd38d697258f213c659fcb533f449e233cce21c64"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sord-m5-aarch64-apple-darwin.tar.gz"
+      sha256 "5746282ca07aaab62b06539fbc6f6c6bb20359fca58fc216dcc63a5c21765751"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sord-m5-x86_64-apple-darwin.tar.gz"
-      sha256 "4a2c36d4ee7822e0839150f0580f4f7938578ac4102ba5177bed0c85d55835ee"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sord-m5-x86_64-apple-darwin.tar.gz"
+      sha256 "89b719a236a75f80afc7b776d3673d390b912d016e79c2aeb24519b6b424ce80"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sord-m5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "906331511740751e7c01d9ab6a9b1e1841c1aa84a9bdddef8db9f5fb696a3808"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sord-m5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "78b68072af6a750da7d56dfebdd3fdcd2e618308d92d1637bae42a53969bf8ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-sord-m5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "91900ca3cd447e43926710e2bc13d5bc62045f28f5953a4c76d5c2f388a5593d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sord-m5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d5fedae276720d3a17553f7f66f629cb6c11dc35cfd944083850d940c4d1f338"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
