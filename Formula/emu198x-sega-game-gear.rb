@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.32.2"
+  version "0.32.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "ffc4ae9e6ae51c29a28c84b4fbfb714ab867e021b3703a815eadd54ad4008f28"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "6ff1d68343ba94c64c77a2d62940ff0d3f3e8b60ca9a5f39bc035965336c479d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "bcacab274899ce0dcf622673ce4c46303db4be2818d2b85c90c90f6efb12daf8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "abf497de8d180025b89ef2f118daa593c580057b92b89d8afffcb12352e5295f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "71ef7e3b81c5e639f415c2e7d5cb81375e10e7d22b633c0f47b26ef136b2992e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9d7d7b530b007810bc490e2b939bc27cbf757d21ef4efdbc1982dc7b5ae06ba8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4c822d48bff762af209ed5d4fcf5c00f6436fc7f3dcf0580e4743569f4cd2812"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "56072673b03123ac37774e1deca64d95ac66a4dad42a1eab3234e969f87ce437"
     end
   end
   license "GPL-2.0-or-later"
