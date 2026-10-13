@@ -1,36 +1,36 @@
 class Emu198xSpectravideoSvi328 < Formula
   desc "Spectravideo SVI-328 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + AY-3-8910 + 8255 PPI"
   homepage "https://emu198x.github.io/"
-  version "0.32.1"
+  version "0.32.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectravideo-svi-328-aarch64-apple-darwin.tar.gz"
-      sha256 "5676a7d5da6a41e99f6e07712f545c7f7a5bcc3a147a6743b5e95108bef589c0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-aarch64-apple-darwin.tar.gz"
+      sha256 "e54891ed09cf09c556ab7852f52a3f4314eab7720fa0395b8fbcbe3e14f249a9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectravideo-svi-328-x86_64-apple-darwin.tar.gz"
-      sha256 "bcccbf5669e6ff08c7cef57db1900a198168f66e5b72b9572ab5d88c79fedc63"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-x86_64-apple-darwin.tar.gz"
+      sha256 "2aec873886134a45945ce37c65075c4316c513524b535016b5f10968a2486c88"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectravideo-svi-328-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "47ebee99de0009c3f5f68b833794090b1af3285be444a51949608276e7b79a5b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "56fdb65f62cf499a1e33f9b5708b6214234a9dba359265b7736acee0ff58f626"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.1/emu198x-spectravideo-svi-328-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3838245102fe253b46af44613adef313a365d790fb13be6c14e3f2b072f78cfd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-spectravideo-svi-328-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3e3ef498891ab54260f03d28f1af8b1506297639d388487963847eb8b06a8823"
     end
   end
   license "GPL-2.0-or-later"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
