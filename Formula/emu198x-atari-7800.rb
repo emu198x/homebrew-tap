@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.32.3"
+  version "0.32.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "7b91bd9efa2bfbc6d995e7a62c71dcc54ea3aca8cd063280b4ce19da4454c44f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "0da52b9f4de8850d395de6357d32089afbc6690db245d6bc2753cec3b6bcdc9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "fab75771ab317f31a24a9fefaf974076d8493bf569c8e3201d773cce5c7eb1cd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "c6f1a61bb40c90ba388e4c24f8c62ec7fbafb597c54e924f9ce0e05c1b9f3330"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "58a5de6fece230f2be76743d77f7ccaa16d9a583d64275d6baa118738e9afc50"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "12e675b24c4ff38e80367f7fb8ed6cbf3abc34ef9bf4b163ea2ed225c5474500"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e139ddf9be6680e8a3d821de2f8a910ea5f00b394694ae5afc5e11923dae5941"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "54e541814348120dce85327de6b7e09e341896720c927d3d391fa0c5da5f696b"
     end
   end
   license "GPL-2.0-or-later"
