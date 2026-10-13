@@ -1,25 +1,25 @@
 class Emu198xAtari2600 < Formula
   desc "Atari 2600 (VCS) headless runner with shell-backed script + MCP parity — 6507 + TIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.32.4"
+  version "0.32.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-2600-aarch64-apple-darwin.tar.gz"
-      sha256 "89c0aa88bf77e98f2490d37e0ce9e7e1bda46671d23e9e398ba792d594ba1bc7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-2600-aarch64-apple-darwin.tar.gz"
+      sha256 "add0819c0a2775d29879824a1e7d560c522d0a424bb157371c31fb7354c02771"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-2600-x86_64-apple-darwin.tar.gz"
-      sha256 "1c8717ea36f9e2380d176d3ada8a31dd62a37d7a9b9b1daca08efb22a1714c6e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-2600-x86_64-apple-darwin.tar.gz"
+      sha256 "88d7fb397188bf570d25c1045220882bdb056d7c617b7056f543495eb9ec3dc7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-2600-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fc4bc12b6fcca4eec83055560582f04846b40edd772054330dec9da6a15a4f35"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-2600-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ce37fc102755db3561174237c71acc1bfa1f78c5cf7ce244ba4c1caa8be76076"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.4/emu198x-atari-2600-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "977ebc8b6c0cdef9c6ddb8c8cbb1792961d319a4073d9e95ee0f6878a8d1b70e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.5/emu198x-atari-2600-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f5aa6171d04aaa66d5a222ec7f96c2d8d65d6f16247f5d0c23a908cfa823a66c"
     end
   end
   license "GPL-2.0-or-later"
