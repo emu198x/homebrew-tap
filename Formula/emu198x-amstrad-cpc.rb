@@ -1,25 +1,25 @@
 class Emu198xAmstradCpc < Formula
   desc "Amstrad CPC464 runner with shell-backed UI, script and MCP parity — Z80 + Gate Array + HD6845S + AY-3-8912"
   homepage "https://emu198x.github.io/"
-  version "0.32.2"
+  version "0.32.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz"
-      sha256 "6052e4c5460ec7b398560b3ffeedfc851a39500cc1af1eb940d206e1fe623587"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz"
+      sha256 "dcff18556fb21aa0cc6812b0f12587f5fd66e0637cfa2336d227d6f56e7373e0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-amstrad-cpc-x86_64-apple-darwin.tar.gz"
-      sha256 "43a0ee8b365af3abcd3c59532f041e1c0a5d181b6708851f859231c5e8118934"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-amstrad-cpc-x86_64-apple-darwin.tar.gz"
+      sha256 "8778f34d2a5eac9c4d972c14adefa8482ab93332e57356ab94740816e5ce54db"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-amstrad-cpc-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b0a793142485eef9d3acc59a54d2c6c703818d0f1ba6422c4da0df41400c8cc1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-amstrad-cpc-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "948a8cf3db948a4a64afbf2915ce60b4eeb19107fbdbc6853edd561b3fb021df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.32.2/emu198x-amstrad-cpc-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0c986b315fc2a3b4597647dc230aa564ce15f1776e097a3846ee9dc9a4086a57"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.32.3/emu198x-amstrad-cpc-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "30a96e8258fd0da68f9b8613ab3ce7b21b41ad6ae695066938186e3a7384e952"
     end
   end
   license "GPL-2.0-or-later"
