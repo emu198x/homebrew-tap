@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.33.0"
+  version "0.34.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "d9b3f3dd44e689683873c92b3495baaaa43e8d9cc2c66208eac1e5d96ed29143"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "da729aafb0704e941337256c7c4f28ff82ff76a4ae520d82b4f5e7b48f05622e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "de4f2a6d47a3b0943cf609686f349c69dcaf022867b049036f25daf291fa33a0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "fe72b8ddcfce39d03a5d216809d7bc851795c571a14fe9be552bcc5019e6b86d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2087562ec0e5f29d4e0b742a1190e67f4124293a66296471a90e9813223a266c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0115a2a8d0468b8af320b0788ca22f458a5802eb2d944e4f5ac69174239a5715"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "344839e82f3c0b716a7d36503a8614827e83dd954d0308669142c9153e496d6c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "75d9951f009a504e4572e833aa50016c17a6e6a30c1d6d1cf9991dce3d400bda"
     end
   end
   license "GPL-2.0-or-later"
