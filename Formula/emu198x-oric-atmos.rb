@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.33.0"
+  version "0.34.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "43d9b4f39a0826f35896e2abfe4798bc90c64b57e0806dda1fca6a7245ac9c76"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "8ae7e16b5e24481d7c4dbbb0ffb1859a7f86f11348ff70493a0a58d3f029e5ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "c619fad355da7dbcea5611ce9e22ff936ee4de8a500a66fef0e32b13ca3bcb77"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "2b60c466e705b514d868e9e0dce07d89f90ad20359d3b04f852d1b577e514bcb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d7484b65d3c231ac91e80319708c3604eb6c35f6dcc777a341439a93377190b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fbd39bc230ed01fab08b76e7eb8e968df61be408c93c78b24c59a96d01dc2b48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.33.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e596390296e4ff57009ecdf7225ff653469d3e5c8d5c1115372406f459b497f8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "721f0165c448adf0324110267be09ef39ec50b282d322885fd5bd9a7c4a76bdc"
     end
   end
   license "GPL-2.0-or-later"
