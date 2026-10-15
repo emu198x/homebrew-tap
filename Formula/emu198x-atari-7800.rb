@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.34.0"
+  version "0.34.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "ed6513283f5298bf9d5935a471268103cadafd513be482b9ec233b613a5487a5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "300bb0e5b86cc1b749b63644528a656c65b41fbdc961984d7f261c5558ad95dc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "01bfd6228d3b0b47c03ac10c766759e3a5b449a0ae5b463f6932419c471ea2a6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "b78c90253f23a026ad6fbb749dd95d89eb17311d45de8471c0405d00df1a74b0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "096f857251b868fd954a42389f39a2f538c23c7e50ac3f206614da0f954d4560"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "babd93373b50062722e7d473c4a336ca4485a84688b0a9f973e9d17174fc8e58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b43dbbd210b1d6101941eb66f2dbf9726ea157f3ad0dc3682a5cbe2822a71f8c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3ccb10443d33a19817e13dcecf7b7196cdc4be84c7d6fc9da373166a45bddefc"
     end
   end
   license "GPL-2.0-or-later"
