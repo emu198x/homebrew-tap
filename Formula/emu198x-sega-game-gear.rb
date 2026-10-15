@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.34.0"
+  version "0.34.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "da729aafb0704e941337256c7c4f28ff82ff76a4ae520d82b4f5e7b48f05622e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "81bea8f530cbea512f98a9cc9ced2ef678e12ace2262d35b4d1205d556a10cfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "fe72b8ddcfce39d03a5d216809d7bc851795c571a14fe9be552bcc5019e6b86d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "38479841ce2570fe616b780a8c89969e585f11dd054641aaeee42816efa41e0a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0115a2a8d0468b8af320b0788ca22f458a5802eb2d944e4f5ac69174239a5715"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "377e2a88e2c1ced9c82a7a7ff9e8f2df8f2d1048c3e2833e136e65b8c05871e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "75d9951f009a504e4572e833aa50016c17a6e6a30c1d6d1cf9991dce3d400bda"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "78503073a5352bdc0ce171ec5ec094afea698190f39a446324f3640422686603"
     end
   end
   license "GPL-2.0-or-later"
