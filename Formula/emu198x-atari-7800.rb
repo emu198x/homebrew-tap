@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.35.3"
+  version "0.35.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "ff3ad982f1e7602e716bad2ed9fc0974461e9ea01fde590038844c3d80bac33f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "7fcbff41f5112df18d59d9e5f9fcd46ccd5f9e561eca290b1439f193fd2992ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "e8836548f0d1a038d09df5ce25ba23e3416712f41459753171d02a947a97c667"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "c7b6358ec2c18064c61d837e8a863db202688082c6083d6d7eec670895d4e7da"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4a3ee409f632e0991b4118f672b73fd9c48ea120e9b49e29127aae6de15f7473"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bce88e3965d6e9904471b54dbdad4ae3ac9cfa0d6a84fdbb6fbb1e2b0461429e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "65588eb551f58601fd15c5631fb6eda091156a267937ceab220f2a65f4ea0e0f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2dc9cdb9961db8659eb1b45e8aa1e35eb3c4b571a91aab0aec143db7c54e62de"
     end
   end
   license "GPL-2.0-or-later"
