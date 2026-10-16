@@ -1,25 +1,25 @@
 class Emu198xAcornAtom < Formula
   desc "Acorn Atom headless runner with shell-backed script + MCP parity — 6502 + 24 KB combined ROM"
   homepage "https://emu198x.github.io/"
-  version "0.34.2"
+  version "0.35.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-acorn-atom-aarch64-apple-darwin.tar.gz"
-      sha256 "ae386b86251cbaa5896dca4a2149f8ff1c3c057351dfb3a9d164f97609c89248"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-acorn-atom-aarch64-apple-darwin.tar.gz"
+      sha256 "91c2561e8be3ed552ddfb9212a3c2fb04901a034dad18332943b9d57d75fa75f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-acorn-atom-x86_64-apple-darwin.tar.gz"
-      sha256 "79cb8a287b9132a44f44cf6f72e2a2a275777074e43b6256041e009bf6962756"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-acorn-atom-x86_64-apple-darwin.tar.gz"
+      sha256 "9aefdee4ecfb45744ea1de892405a3223c6ad927563dc67e2486aa88f068577a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-acorn-atom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4391697399f3ac34449484193866302611acfac048360f3cd8e9d106317c4e73"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-acorn-atom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "24d51571d8b537ac8bdc33ebef3fe86f8c349e400d35a1bcfb1bf82503b65746"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-acorn-atom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e9cc10e1f2850dad43d1b53ce4a55cb23f3a569cd2e34794508cd05cd3705e8c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-acorn-atom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "db6053e2515a5429f6ab53e9d4d13c39ef2a22fa9605b0b1231d01d09b62abc9"
     end
   end
   license "GPL-2.0-or-later"
