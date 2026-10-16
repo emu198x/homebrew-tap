@@ -1,25 +1,25 @@
 class Emu198xAtari5200 < Formula
   desc "Atari 5200 SuperSystem headless runner with shell-backed script + MCP parity — 6502 + ANTIC + GTIA + POKEY"
   homepage "https://emu198x.github.io/"
-  version "0.34.2"
+  version "0.35.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
-      sha256 "7602e2f3bf18b87b7a18ddc4338b0be1fdaf27ae1fb2b7a09e1f1fb11d2061fb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
+      sha256 "e686d63a955b41dc3006fa48112129e0a54e44a4ecb0f54f7251b49982a0e714"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
-      sha256 "57aff14d7eb607f8b9cebc311fc50f7c9a5332e7c5073a584a6136b7202cf496"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
+      sha256 "0e8b857a9c1625b9dc1a476be027845b48cb123fbc2570874afb9d5ca631d68d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cad7ab602723c59b9f493ea18d3dbadfc7badff34f6bf7e9f4f85128cb14de91"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c6c83e375fe8568461ff8b897190c187848420cbe0741393997f238259614266"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c04cf80ed737340bfa29f2ee8a315a6b4f84a3d9c8e13272aabbd180947dac39"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "773881e75298a4c7ab91bbe1d5edcffc302bc870bf8822a4f1a3db8a443de20e"
     end
   end
   license "GPL-2.0-or-later"
