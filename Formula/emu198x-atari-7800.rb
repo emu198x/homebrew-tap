@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.34.2"
+  version "0.35.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "be616c60498e7d89a5099c5dc2b19c1f0715fd3a0174ea255a059d37d56ac814"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "40333fb9112837adeb0b77642d1d4e234952fae370bea27a609c104d0f39d322"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "318c3064d604d463ef5fd94b2c94aa13f8c8200396d3893875f0acba27467676"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "8b89670879c8c7fae49b03b5a6787dc9caa3f9d5caceb7152b474fc5361cc74a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f357de67ba9388db662a9d28298c4a23abff3000e5c7eac9117d064d0373681e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7639ca4996ea239e3210c3910c243bd237c0c3e8e13beee6f3387c806347d5b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "643032eeb6f70939586dfa2aadfac1c79e84daa51953e66fe4fea257ddc72f71"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e53b40480469cf8b5504f120293b5a2b9fcc2661cfd11af00ba107e54b403c6a"
     end
   end
   license "GPL-2.0-or-later"
