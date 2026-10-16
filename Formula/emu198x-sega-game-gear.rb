@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.34.2"
+  version "0.35.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "99838ffff5853aa15faaec3e3b08459f3b4bf553c217f6a2625ad9535e759aa4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "60a934bfbe7a97b5950ff158955a428d0282e87a6516f39ad1d50d203dc44e89"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "9240001081bd3ab238b5bfa6aaa4bbc2b5d078f5a0f97bf2c1b87872d98d90b1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "7095009a1cd149025c7516e0971e4f5e57c989b13b337dc21781e722f6529e3c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "648719fed2e85ac3a21e9fbd45335e8f4e17b4a1a06dff200b11dcf168227fc7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fd46eecf719b5d862655cf95553ee0d6ee55a65514379ae2c6b4deaec77e9d46"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b7311b2b2aa5018ef634ad9aa618031137f8617ec79766ef27cc75f199fc1bb0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c1b48a5bb87a54873d431aa87a109f461461d297b0d3a531a770151096a5d6a6"
     end
   end
   license "GPL-2.0-or-later"
