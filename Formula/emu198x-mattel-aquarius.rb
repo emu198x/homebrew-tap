@@ -1,25 +1,25 @@
 class Emu198xMattelAquarius < Formula
   desc "Mattel Aquarius headless runner with shell-backed script + MCP parity — Z80 + memory-mapped char display"
   homepage "https://emu198x.github.io/"
-  version "0.35.0"
+  version "0.35.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-mattel-aquarius-aarch64-apple-darwin.tar.gz"
-      sha256 "46972b46852bcfa5df30fb67ab8d9bb9d143659929518596d493654d87cbaa3e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-mattel-aquarius-aarch64-apple-darwin.tar.gz"
+      sha256 "88f3fdf1af57ed6e8d070e638ce9e32b177ce733f51c945d557f2a0187f419d4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-mattel-aquarius-x86_64-apple-darwin.tar.gz"
-      sha256 "67fafd33aafb10ea6a1529ebe9da387c5a89a077f7f8a1be7b3bbd87fe6f286b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-mattel-aquarius-x86_64-apple-darwin.tar.gz"
+      sha256 "bbf704fa848c9afdd692fb76fbba6bc30f96e15c617ede4cfbbd81fb888463e5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-mattel-aquarius-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "96944d90e39ed629f788363e1970fe38863cb23ef7a8eb1305743c19a25475df"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-mattel-aquarius-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "efe983a768507ee16bf07202cae78526d420622973bc09724776fef4dda764e6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-mattel-aquarius-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0908b26a87c0e01db1e1c9df4dd1225adca6e3bbacae090c49ed7defe8ad6288"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-mattel-aquarius-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "507bc28bd627171297c3fd480a96a39ec1815c8e19ee72cb5010375bd72eb44f"
     end
   end
   license "GPL-2.0-or-later"
