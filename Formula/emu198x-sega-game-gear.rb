@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.35.2"
+  version "0.35.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "d60a7c73cee42e8152bd83ddbfdcdd4fcb42e4c839a6bbda98b72cf743cc4322"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "145a06864d31d0d740068eaf7e84d12ea452ceb2b7c99d11d199055e6bc91a27"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "6ac2682c7b2c943ffaba1e8deac8d5e30c9bcf6f77d0e81a74b09902996f572e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "64a28c8c1ebcb16e4f401ffbcb11752c7b1a8f6d934035327e30f0626a0ac88d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4c47194becc292918b0f4bf426331b8ed0707ec87f0eaf5e36514d2cad135d3a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c152011fa74b656c6d6a4a4597c92e27ebca33a6b5257ca60beec66454ddef54"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5d0e7790c38f2e0b12b120b12f1ca40201d35f4acf73934c562d86495128f88e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f25c1f24ea5cba641fa50af2b273b4a208da3bc041f91c8fe9c1d56f19d2c45b"
     end
   end
   license "GPL-2.0-or-later"
