@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.35.0"
+  version "0.35.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "e7f655a86b39cb390178b177188ee1afb5fdf949c0e7621aa2256d4d04372398"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "ca7b07c41252834d3595f9fe19bc05f09c94bbfa1d342182280144592c2c3343"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "1d1cf813c1283aa1a6f851a28581f844a335426dccfaa478dc486f521bad45b7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "ef1f9f24ed46937d1052f10f69a7ceda27a0a9f2ebeff7b1431b9d60d751f4d4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9a3f4bcbaad1ec9b17cea2b1365b6806e338d5d09819c131bad56bc8ecf92c47"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e4d140093e2891d6ed1016e0942539bf3bb524f97b80f56da1c2fb1a63928113"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ca7edbb6aca2da12e3520a2de6e29efd48161410e13d6382c45afd8119aa6832"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b4f643309c9c13f7ae38b916875a183e4be55855c2d39be4f30a680333a3e8fc"
     end
   end
   license "GPL-2.0-or-later"
