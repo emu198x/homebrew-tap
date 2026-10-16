@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.35.3"
+  version "0.35.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "145a06864d31d0d740068eaf7e84d12ea452ceb2b7c99d11d199055e6bc91a27"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "47c0e2db0b4777cf864ac7c76e08ccaedb93d88089258fa35cd776ce1df936f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "64a28c8c1ebcb16e4f401ffbcb11752c7b1a8f6d934035327e30f0626a0ac88d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "3f9bf1e959953d3ee0a87c951597931313b7f410baf96f675b0dbaf5c048d6ee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c152011fa74b656c6d6a4a4597c92e27ebca33a6b5257ca60beec66454ddef54"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fdc88bfce9c17c896c3dfb16930b329e565564266ffae293537946dfba73e5d6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.3/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f25c1f24ea5cba641fa50af2b273b4a208da3bc041f91c8fe9c1d56f19d2c45b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a27bd37799673ea7c879eb5cfe63d08ada87ede206a987cb44db40b8712128b4"
     end
   end
   license "GPL-2.0-or-later"
