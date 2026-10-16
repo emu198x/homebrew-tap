@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.34.1"
+  version "0.34.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "2fb05bae363af46559db6319a437d03f0233e99a6c51d3ecf62c9db6ba7764cb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "6e00cf0849ae0bde02709190b558120ffa3a9dc13bafc8b943ed1c9ef8a5084f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "93ce796c44406988d59a9190b2e799fc3eeb2fa101b0b74c08b2e228d7412c65"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "fab0c6cb9c48bde0d0d94959771f84c7bf87d84edc8f3cefc0108f038cc7c158"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6446a2cc4eb3f4380e63a563a72740a1ade46f861ab8cbaa736b515cc1f23c39"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "89cb571077960eabaf885f2a7c9393258a0ac4d8c1c0d53e6d8921abc4449acc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0e99574d66583658f0c4716833dd2871b7fe07460f07babcda906a47e4f91042"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "57f4c5f54e5a71ff2b74f3911afbe8aa3eeffb87c372d857097a6013226f2802"
     end
   end
   license "GPL-2.0-or-later"
