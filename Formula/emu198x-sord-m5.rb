@@ -1,25 +1,25 @@
 class Emu198xSordM5 < Formula
   desc "Sord M5 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.34.2"
+  version "0.35.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sord-m5-aarch64-apple-darwin.tar.gz"
-      sha256 "37fd6a509851dbc4a83bffcf3e163b126f12f4724b3f862941eeb77a9af8fd99"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sord-m5-aarch64-apple-darwin.tar.gz"
+      sha256 "9a39be0590c0d945ce4d64841d5b8900018e1320ab1c1485b48467b11d2f2beb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sord-m5-x86_64-apple-darwin.tar.gz"
-      sha256 "495f0a589e400f0f750fa51ebca232b4432478a128fc79b8248fcbdc0c1da88a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sord-m5-x86_64-apple-darwin.tar.gz"
+      sha256 "3a3c81479bbbabd5422f7523f6619f983700967434ee71aa8893fd05c1e4c8e6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sord-m5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "19bc5b7933bfb9c5ec2efdf9ccda53a55bac9920b1ebff4b7de0e5ed94713a40"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sord-m5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c97daf713a78277e042771d29989bba9836ce6e75f99ebec056c9440d735c927"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.34.2/emu198x-sord-m5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "425f925ac48cdd03cc23cf0999e0da68f8f0407e034c8da036d63ef758738fbb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-sord-m5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "be0e954f550021cd9cfb57f4c5784c2a2749cf8ac526302946ff52318376310d"
     end
   end
   license "GPL-2.0-or-later"
