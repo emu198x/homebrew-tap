@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.35.0"
+  version "0.35.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "40333fb9112837adeb0b77642d1d4e234952fae370bea27a609c104d0f39d322"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "1cebfea36562016019621e2a2b55787959d0bef392eee6d89e9a352d15f7edda"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "8b89670879c8c7fae49b03b5a6787dc9caa3f9d5caceb7152b474fc5361cc74a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "6a4f3d8cc68cc595551f53b8a3f56823070e079af434e3cedd85347c69f127ba"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7639ca4996ea239e3210c3910c243bd237c0c3e8e13beee6f3387c806347d5b6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "83bf58252183d30e8ba77859e328170c1b9527f0ee7552cfab09601a27bd4a30"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e53b40480469cf8b5504f120293b5a2b9fcc2661cfd11af00ba107e54b403c6a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2ad748f679ee4c3675a0e8dce918dfd311a43fd96836caf1cce98441b32f1822"
     end
   end
   license "GPL-2.0-or-later"
