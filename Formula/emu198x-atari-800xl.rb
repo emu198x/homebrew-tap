@@ -1,25 +1,25 @@
 class Emu198xAtari800xl < Formula
   desc "Atari 800XL headless runner with shell-backed script + MCP parity — 6502C Sally + ANTIC + GTIA + POKEY + PIA-6520"
   homepage "https://emu198x.github.io/"
-  version "0.35.5"
+  version "0.36.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-atari-800xl-aarch64-apple-darwin.tar.gz"
-      sha256 "d83c88ab8ea3ca4e8ac35b0c9223aca1e821abd586d8981b8fda92b191afa55b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-800xl-aarch64-apple-darwin.tar.gz"
+      sha256 "73041c68e46d7f888246762fc1f9141ddfed3d4bbe769c5b6c7413019944f3f7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-atari-800xl-x86_64-apple-darwin.tar.gz"
-      sha256 "aa6703a45aa44daa4a88ea0fd5f87028eeb405f0733e11ce76e932bcdfebc33c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-800xl-x86_64-apple-darwin.tar.gz"
+      sha256 "e8da5093dcd152c71b576d869d6fe8b91caa56b0f76b42ebe1668b4d4d527a88"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-atari-800xl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "59e7b0085e154ee6058ea1a6dac310bbd1a2ff7897dc31c83b82fecd5c113795"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-800xl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6d5685fef08e7d66cbcf113bfa4f41ac14d0b5037a351b4c34c1b825b7370bca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-atari-800xl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8ccf99c26ba4a40ec611b00285ba55465816d5dd3ea6b008805292b19f6707d5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-800xl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c03815ebb921a2b4e1e971c235bf29d02e03533f6e12778d10e710fb6966a9a"
     end
   end
   license "GPL-2.0-or-later"
