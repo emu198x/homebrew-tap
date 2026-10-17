@@ -1,25 +1,25 @@
 class Emu198xSegaSg1000 < Formula
   desc "Sega SG-1000 / SC-3000 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.35.5"
+  version "0.36.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
-      sha256 "5c6b2b3f3ecb75d86ac088629e352bf5d7425080a153b0590cf2375b16d5321d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
+      sha256 "84f2d31468dd34e82157146692fe15812fdbfb3148daf6efdb34323262fa9f7e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
-      sha256 "d9c81b1e49fa6d9f3b1a1508bf8f3bed1e1466b18f5df65ca2ebe603d2227bb5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
+      sha256 "f04c912f4a2a20904ead2f6940a2882e9c69a95d5896bf080de88df9a682d7ec"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1a6567e3139f8291ed113417cf4897745aa9f42e57f678bd458ed5fa50dee782"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e80393fa708704e273a2ba8a61958dc37b45d750132bb364fbae939b8dee8507"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0a6e8326b0b6580a0d559afbf6d77adced13138f21f3a627139f24acc330d095"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2cae3f719aded4bc219d6d5428af06a132020472dd41ddd9b4488f5be7a1b2d9"
     end
   end
   license "GPL-2.0-or-later"
