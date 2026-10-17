@@ -1,25 +1,25 @@
 class Emu198xColecovision < Formula
   desc "ColecoVision headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + SN76489AN"
   homepage "https://emu198x.github.io/"
-  version "0.35.4"
+  version "0.35.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-colecovision-aarch64-apple-darwin.tar.gz"
-      sha256 "0508bb74c1e7ab62c3ea692d48ed6c451368206ac3a3181eb062db9c79822868"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-colecovision-aarch64-apple-darwin.tar.gz"
+      sha256 "30b352b8d2741eac828b40250c38ef2e6b95e0220fe319af69ef6aeb9fcc7ca2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-colecovision-x86_64-apple-darwin.tar.gz"
-      sha256 "2a99c2ced87b6a0eaad4254820e9795441be4e36c34b5aca76b8003b4158316c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-colecovision-x86_64-apple-darwin.tar.gz"
+      sha256 "bc34e28ad678bbe13510f5f0fa7691ac23ad78b5e317b7b31f4aaaf4c7ee22c8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-colecovision-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0661788c5a63e7a8f671d267e1226442c36acb989c381ecfe7dd781bdd5c427c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-colecovision-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "146616a5ff4ddece2c00156e92d908112e38f823f65a37305b98db0d79b7edf7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.35.4/emu198x-colecovision-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f20d7e4f2becffcc301a1a485958b8837c4770a5182be1f28046b8aceb38a458"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.35.5/emu198x-colecovision-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ed84c43f3dc79c7c0d90ab7231436b55b5a3f046f938fe6c08f3f8947cda258b"
     end
   end
   license "GPL-2.0-or-later"
