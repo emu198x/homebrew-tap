@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.36.0"
+  version "0.37.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "dd05185f020300cb84f9ada7f057d5764795ed2a10e2fca1cb11d66c8ad4385b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "318433bce5956795ea7a0a241d1fda416cc00a6c58d653bb0909b1c6d36c1047"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "ac665b7d912fed252236f6ba75645bd279b7a3f61be54e26e95363c1ad73df3c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "856b7075db6bff5e6825a38883c7710dc912b589b4e00f87c71834ced3771394"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0bbdb8bcba228afce20a0b8e9911a280eddee627cb20a56dd1780d44250fedae"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ee0c6ee1598e2b08e23a9228d1dbd49835ffa08c4987cea40bce5df2fb5f20fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "78706408ccbbaad5dda957587501c6b4c6396ab7cbdbc7b760d13bc6f2feaa85"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "73c7240d04b69e7a5cc51a35247946e80ec78b1b9e4f874425a4537025d6613a"
     end
   end
   license "GPL-2.0-or-later"
