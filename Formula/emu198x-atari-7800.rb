@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.37.0"
+  version "0.38.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "318433bce5956795ea7a0a241d1fda416cc00a6c58d653bb0909b1c6d36c1047"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "73e3a8f5eab6168293b3560fd3da8e8a72a71327f74cfa59a4abcf4179a79884"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "856b7075db6bff5e6825a38883c7710dc912b589b4e00f87c71834ced3771394"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "f7b04e5a7e0ac3262627509f9d14cd98f74bb46de74b0a9ec1224f4ad01955ac"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ee0c6ee1598e2b08e23a9228d1dbd49835ffa08c4987cea40bce5df2fb5f20fa"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b6365670ce38998307f193cc610c0090cd1b49a9d89eae5aa79a89513266008b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "73c7240d04b69e7a5cc51a35247946e80ec78b1b9e4f874425a4537025d6613a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "71ef0bb03cb42bec8b5e495aff5c1d4fc74eec538d9eedba308caf37a6cb65d1"
     end
   end
   license "GPL-2.0-or-later"
