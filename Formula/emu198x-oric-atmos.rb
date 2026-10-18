@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.37.0"
+  version "0.38.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "6393b059e89ae55b017a7a17839ea0c3fac395724305482f57eb1b9b226068d4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "07bea731043aa1ddf6e648a7820d51a76d1e515c3cf2b5bbf210a6c85eace4e0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "bf35bc6d5aec6e4ae73c70da9f395867c41b92340111fb5ef5b9b723c96f7a2d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "a3c8fcfa6d1310c60b75b672b374c74cc9dd832616d7d33a14562e904a4cc27e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3107100025dd209a9f5a1303784e68474d05405121e26833406623c10211c54d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b77a6d55bff7b49af040cbac0d60a492b9b0ea6accf2289ee6608cc9e41540db"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "875ecb9d03d3abcdf7c9466633f497addda503dee03ee21d3d37545110555abb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a81704daa0f9bb71434dd6b975db8f54f49b0710d836182fef9a46cbdbe26ade"
     end
   end
   license "GPL-2.0-or-later"
