@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.36.0"
+  version "0.37.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "82172ef493316d86687129efd704c3c71d0ccf8a2275fc7ec90c1ab74c40d3b5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "6393b059e89ae55b017a7a17839ea0c3fac395724305482f57eb1b9b226068d4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "e7edcfcb6d297907cc3930fef127ab8be20f0401578349b9ed68deb98ebb1310"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "bf35bc6d5aec6e4ae73c70da9f395867c41b92340111fb5ef5b9b723c96f7a2d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f02acc0f2452413b8525374d6158e333608203e88f2a04375b1e5ad77ddc73b9"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3107100025dd209a9f5a1303784e68474d05405121e26833406623c10211c54d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9cebfbb6a6bc922150329cc8ede965f384b0484bb3d6c9ede65ebe6c1a061642"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "875ecb9d03d3abcdf7c9466633f497addda503dee03ee21d3d37545110555abb"
     end
   end
   license "GPL-2.0-or-later"
