@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.36.0"
+  version "0.37.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "9a2395724772ce290a6a969538e5f172222a9643a50ca53458b5440036fe669d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "9d1c18dde734c5dc1e2dbb5b146806c99f66ad517823055157cbd6224bd41b1d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "42d5db4c08361647823042f497612cb2cf6dd6c25710cc72d8ea4ce154a23210"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "d95f5e65e6fd5df560010ff24d8c1a0dc02fe6c6cdbba5f707d2a9d541ea0587"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d1ff68d954a7538c31f280e0bae8e2a928ec7fdfe30f39efa8e2743d59da4b47"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "dd38940beeeaefb6936d845503e4a577681fa59551c05cadc0cc3e9b8fb6b6b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d83ac81432c71adea6b4f61850b5fe2a19c067791d0dfe834b8470acd3557372"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cc4c7de5155b77a8710561c15818afe2aa28b85a1540457483167c5b2ab588ad"
     end
   end
   license "GPL-2.0-or-later"
