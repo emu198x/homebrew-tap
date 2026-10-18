@@ -1,25 +1,25 @@
 class Emu198xMsx < Formula
   desc "MSX1 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + AY-3-8910 + 8255 PPI"
   homepage "https://emu198x.github.io/"
-  version "0.36.0"
+  version "0.37.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-msx-aarch64-apple-darwin.tar.gz"
-      sha256 "79bb3883deb93fe8bed06ae1a93fb11efd3ec893cd1eedebf851e989e31a6252"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-msx-aarch64-apple-darwin.tar.gz"
+      sha256 "057ea3f7b2a2a47373eb4036cba43669a971751cf0613a1590d87261d7fce7a1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-msx-x86_64-apple-darwin.tar.gz"
-      sha256 "0a393a02a19bb5515fa85241e50f41ed527e5c54e1341e029ed06738e85e8da2"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-msx-x86_64-apple-darwin.tar.gz"
+      sha256 "c0ffcd1697eeb091ed3c0bdcc79c22120b2f0f0ff27713f0c5b83b60d8a903c1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-msx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "27968fc10aeb9141809ff571b89c1c4da08318a0af48bd207f473aafa749976c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-msx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6e3aae2a301233e527d04d8b0cef67b0d52b23f0483bef94987fb8499a51760f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.36.0/emu198x-msx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "517784c726e0643cff33fc14e017262ca6bd38817186396f4653b73d2dd9d4aa"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.37.0/emu198x-msx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1983dd9f1d5785ecce9957fbe148fc0180736dbc4241df6db718356cc6311c97"
     end
   end
   license "GPL-2.0-or-later"
