@@ -1,25 +1,25 @@
 class Emu198xAcornBbcMicro < Formula
   desc "BBC Micro Model B headless runner with shell-backed script + MCP parity — 6502 + 6845 + Video ULA + 2x VIA + SN76489"
   homepage "https://emu198x.github.io/"
-  version "0.38.0"
+  version "0.38.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-bbc-micro-aarch64-apple-darwin.tar.gz"
-      sha256 "35bc1fd73816a224e8b9ce5ada7ecfe2f420603722f9e4ed1a4d89ae014e8b9b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-bbc-micro-aarch64-apple-darwin.tar.gz"
+      sha256 "687c8a4073288cf40811f13daa11b129c926f1315efe2cae1eecaa39d0572756"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-bbc-micro-x86_64-apple-darwin.tar.gz"
-      sha256 "2c528a53c1a6cc898bba89f38a8e9acc807025de9005068879f30332f09e2a2a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-bbc-micro-x86_64-apple-darwin.tar.gz"
+      sha256 "b66aadbf294e42094da04bd797f85734f3063b1fc32b259cb50aca53a8e01678"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-bbc-micro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0af1eb8ba7e9dfe5fd4e2a0badbc64bf42738eb4cc3e4348ebac06bd05f54b3c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-bbc-micro-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "078d88d68076c72b639dd111fa94712a6f01bf6f8e0fa533ad44dcda5ed31f1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-bbc-micro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9cd617b9f3bcf0da1954dc82c576a18d6916eb0a37a7d49ccbd903552e1889ba"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-bbc-micro-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1033e4e2259f021932ae64b7cd11203f3e5775c8915253c6fa2a0ea0ec87fd1f"
     end
   end
   license "GPL-2.0-or-later"
