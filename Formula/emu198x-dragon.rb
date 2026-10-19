@@ -1,25 +1,25 @@
 class Emu198xDragon < Formula
   desc "Native Dragon 32/64 verifier with interactive UI, headless harness, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.38.0"
+  version "0.38.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-dragon-aarch64-apple-darwin.tar.gz"
-      sha256 "d20bd68206e4ba980b9a271d92f481e1ee7a1a26b47102f905f39ed96fbd0b98"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-dragon-aarch64-apple-darwin.tar.gz"
+      sha256 "b8d64e5b0b974ef2aafa36df3a8530ce0ae4bff7fd312e1b79339d4cc6f94b15"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-dragon-x86_64-apple-darwin.tar.gz"
-      sha256 "93c25d63480ea64082cdaf895538f2e07725744f58789c0e2c7e6cb8fb7f05a9"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-dragon-x86_64-apple-darwin.tar.gz"
+      sha256 "7774aeed7a287c76c53d83e664ddef903623fc0af07460fe9a8033f69935710f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-dragon-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d2d86d2261467fa8624513ae6c7aa44a43076f46a79d4a9d1d235d4ab57a7033"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-dragon-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "eaf10c3ef3756d0a0011ebe8adc67536063012d9d9ba4083bc9cda8fc29a3434"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-dragon-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "37ed4adb7a0ef805510b63ab4801321005966f8a59627bacb1b5725d072c4f99"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-dragon-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "118cf2614cfc0bd373dda474f236d0654948a81c64a97ea42d1c6c5d5d2921ed"
     end
   end
   license "GPL-2.0-or-later"
