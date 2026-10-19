@@ -1,25 +1,25 @@
 class Emu198xAcornElectron < Formula
   desc "Acorn Electron headless runner with shell-backed script + MCP parity — 6502A + custom ULA"
   homepage "https://emu198x.github.io/"
-  version "0.38.0"
+  version "0.38.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-electron-aarch64-apple-darwin.tar.gz"
-      sha256 "1e7eb97e36e605f4fade9348d6d1cef083f0c262dbb47a42e642a16c1ad623f6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-electron-aarch64-apple-darwin.tar.gz"
+      sha256 "a0a963750dc49167ed972b18feb991367060c17d0159b908cb6a8966653f7ff2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-electron-x86_64-apple-darwin.tar.gz"
-      sha256 "0f56e654ba2a9c377cb8a471b2c4887af6f26eb96fdf105f4ebeedfdf965918c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-electron-x86_64-apple-darwin.tar.gz"
+      sha256 "473d46167b3d2122dbe59264476f901a7a0bd0fb7162a0d5e0d3365abcfd69c7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-electron-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c6f33a5faf6e1312475d5b81b185660c60512cacd0f074589c8df0b8a0c7d086"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-electron-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ba9c7f11a50807b8b47ec4c06fc2b640842320da3130999f9cba165eedfa0497"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-acorn-electron-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f49bbd71365344e4742be945f222b519f773cdfd20ac03bf36ab7e90c694c104"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-acorn-electron-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fa4313c7b7d91fff539f56548f15a74bfd0d670c63475c1742c0720f302be0d0"
     end
   end
   license "GPL-2.0-or-later"
