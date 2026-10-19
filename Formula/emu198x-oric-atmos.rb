@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.38.1"
+  version "0.38.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "a2e73da070b939023f9abdc53c8199264fea9391aa8e0b50af0bf437ec6fc061"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "261dbffac286d291d718c5921f874bd682f519650f049344e3af32c77f7f093e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "be113cdff384f66382f92954aee0c81bf98105da6cc3cdbe7057181cb4063bcc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "c51de0815befd5591f48e29c5e9b13a6ada1f73568fe3f5c428b1bc002e78136"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7eb812cf0fd1d5748160bb8e7a9a21e8ce28e806133d8aa5c9fa9147a1b79d14"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e4b297ee286b2dfaac14c2154bbbf7e0af5b5eba90eeaffb7bba2ce86c8c3c38"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8216ce4e368661701b1e9735163d4c11e090c20767ea1e725dc590d311510552"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fd8aaff7fdb884c6f2c6260374aa858a1bef185d737c559e2d9ba328e0574a88"
     end
   end
   license "GPL-2.0-or-later"
