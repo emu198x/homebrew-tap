@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.38.1"
+  version "0.38.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "92f2dceff81804a2a27d25259d8234a60193df013d568c4f688614bdada59ff6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "faae70efc34fa46fe3f0170dbd438b51852545023e002f1045bfdbb7421c4809"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "e2ca75b655b432eac277ee43540eac66eb49230c41dec82b7b1a9cab335afa25"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "871406b322483c9e2eb600b9c37bc814cff9f9feb978815fbb1293968c891b93"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b76514c6dc985674e2e9c0ecf4f7b3c554f85bec7c13b993464ed91a96410b6b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6b0ab6fe1fe7d8e2e8547c0cf4ea9279a3487aca86ee58ecebe70ab0fd851574"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54419f99a74660cd94575aed17f0d8682d2e0b078e9f61d7e372dd8a52084f6b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f8d9d9449d3e2f7c6dafd73f80228abc23ce161ea6fa7c7ec672eb128caddd7a"
     end
   end
   license "GPL-2.0-or-later"
