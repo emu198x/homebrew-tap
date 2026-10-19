@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.38.0"
+  version "0.38.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "bd0cf1379741abb1b08761043f99d3d6689fb94fc22ba4a24e6f5be2ef862210"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "7e6611a16b737e3f6ed7fc365c8e80bd308494b798623315c700e3c6336e3bfd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "fdae0aaea22b5badbc386da68c21c533903c1fe0d27363ff421e7c02896408cb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "2f4e0661f790c007f71c93d26df55ee44d0a18e5742317e7e63f60b0db3bf9c6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "29212f89e95b2ceb4229c10a7ed8440c0530cc23a81c36fbcac671fb2cb0e699"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1957b2e620f2de9492ee77e765bbfd08227cb48c3e7c8997638d67aa2cff4298"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0714c7f4bd4c5f474210f83456c89c234de58e60b2de91ff5c0e18a202d59c81"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5d215a4a7bea9e7947cea63b16b129c0cefa3841344fb416019c33926e5a7ecd"
     end
   end
   license "GPL-2.0-or-later"
