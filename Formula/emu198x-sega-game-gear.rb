@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.38.1"
+  version "0.38.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "7e6611a16b737e3f6ed7fc365c8e80bd308494b798623315c700e3c6336e3bfd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "8f118ed2e0c2eef2d9cc9fe1291bf8187e36cad54c5eed2bf52cfac6f095fc8c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "2f4e0661f790c007f71c93d26df55ee44d0a18e5742317e7e63f60b0db3bf9c6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "93a030691bc80d9d504b936732533c07e2e5d261489abf820b95e2d3bf24060c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1957b2e620f2de9492ee77e765bbfd08227cb48c3e7c8997638d67aa2cff4298"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4a6bb2443e9130bb37c606c88de40956f61dc2c4e30a5aeeb990ab393d284240"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5d215a4a7bea9e7947cea63b16b129c0cefa3841344fb416019c33926e5a7ecd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1f68b3ebdb8673ada40528ab3afe2ee181266bbd18577c6d670290206be402fa"
     end
   end
   license "GPL-2.0-or-later"
