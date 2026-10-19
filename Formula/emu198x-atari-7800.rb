@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.38.2"
+  version "0.38.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "faae70efc34fa46fe3f0170dbd438b51852545023e002f1045bfdbb7421c4809"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "32337ec02f169dc0cda2c0fd284dae5efe6465b6186db5a8d6341520485363fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "871406b322483c9e2eb600b9c37bc814cff9f9feb978815fbb1293968c891b93"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "ec9ba76da9cdbbe9c7f4210240fbd0912e3249fd64f3f95b20ae961e2419fbee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6b0ab6fe1fe7d8e2e8547c0cf4ea9279a3487aca86ee58ecebe70ab0fd851574"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4a3b308b275493f59ccb4d8d0e2bb4b015b26a3952b65b4ae4b756ef6b3e4b70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f8d9d9449d3e2f7c6dafd73f80228abc23ce161ea6fa7c7ec672eb128caddd7a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f6695b4298ecd4c7f9b8777d7f25ca66a2d284766a963fe2bcef3045bd1999cf"
     end
   end
   license "GPL-2.0-or-later"
