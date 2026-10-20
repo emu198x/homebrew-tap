@@ -1,25 +1,25 @@
 class Emu198xAtari5200 < Formula
   desc "Atari 5200 SuperSystem headless runner with shell-backed script + MCP parity — 6502 + ANTIC + GTIA + POKEY"
   homepage "https://emu198x.github.io/"
-  version "0.39.1"
+  version "0.39.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
-      sha256 "5e3dbcd02713df0d80f980c0309bf9f105d6350371b30fd18075ffa50ae34812"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
+      sha256 "0e651f53d0a8ed86db32cf8726c448243f48341d19157a0988e8ebc5ad224f8c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
-      sha256 "949361206683ecccc4cf7a0f979b73ad6825f3976e5a6700977f52f9acf8d528"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
+      sha256 "880d4d79866693ea8c6794b39796206ecb4d7df52e1a3e93e4e7686030a48068"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d322ccee9ac2716e62104d7b7a17de3a160da49299abb833bc265368198dfeb0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d0a24b2e74be50428a4cf4c5057c74f93a47491a2cc075a28b0e5743e25947f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "48dcb66c117885d690c6f2fa8c9f1ba2c2bd67954ea7a54691eeb5f524d96aa0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4a64d176e67cec77511e5d6566998e874d6ea26a497a2554b0a95e6f91c2ffb5"
     end
   end
   license "GPL-2.0-or-later"
