@@ -1,25 +1,25 @@
 class Emu198xCommodorePet < Formula
   desc "Commodore PET headless runner with shell-backed script + MCP parity — 6502 + 6845 CRTC + 6520 + 6522"
   homepage "https://emu198x.github.io/"
-  version "0.40.0"
+  version "0.41.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-commodore-pet-aarch64-apple-darwin.tar.gz"
-      sha256 "a7fd3ce275a29690b638fa0c47112f47b76ccde84a31671980f86cd81c963f97"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-commodore-pet-aarch64-apple-darwin.tar.gz"
+      sha256 "ef0b031a0bfd34324cadc3dbb2be10cb4e0db160ccd8117c640bb29e96f5ac90"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-commodore-pet-x86_64-apple-darwin.tar.gz"
-      sha256 "8651abfc7f49f52e7857d556dac9651dfe251826971d66a093459697feb67c6c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-commodore-pet-x86_64-apple-darwin.tar.gz"
+      sha256 "d4211d76f292df606447b3511d69e0d8a3d83bb49fcec6c6faa1fffaba4175cb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-commodore-pet-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "79a2d8f4d92d76e040b88dc69656954f704a3525b6be522ac2090fcd8c78938c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-commodore-pet-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e57b9d6cc91f8d386fd5ed8f74dde51d836143b238249efc083ec7f157f7759a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-commodore-pet-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "def7444ef178b5549cd46916ae9260fe436d82ceadb7503559a1a99352d9e040"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-commodore-pet-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a70955db458eab223c0a892f7541e194e3c4a086e5f7389e9431e9bd404e6080"
     end
   end
   license "GPL-2.0-or-later"
