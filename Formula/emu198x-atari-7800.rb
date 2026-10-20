@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.38.3"
+  version "0.39.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "32337ec02f169dc0cda2c0fd284dae5efe6465b6186db5a8d6341520485363fa"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "6281f084a80dca293115a2d0096ab70fad0161aa3692314fa78db5a28c70e0d6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "ec9ba76da9cdbbe9c7f4210240fbd0912e3249fd64f3f95b20ae961e2419fbee"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "5ae01d5b64cc9c5b60dda68406548444030de0bb6835b7fb1377caae4f64eb21"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4a3b308b275493f59ccb4d8d0e2bb4b015b26a3952b65b4ae4b756ef6b3e4b70"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "27bcb384e4283c0cbda6081c6bc80338c243ca187b507a97d07cd96b0dbdb66f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.38.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f6695b4298ecd4c7f9b8777d7f25ca66a2d284766a963fe2bcef3045bd1999cf"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cd89bc0454f121bd1e8aac317a5f0c03c7e27e521303285db00e2bc087ad9d79"
     end
   end
   license "GPL-2.0-or-later"
