@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.39.1"
+  version "0.39.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "6d84c7c928093bab2bb196337ac611916b09e716817600386235200bb573cab1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "b636031331def5311e5f5fce302445a3330287ac395747a4fcfa0f1c74e8d174"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "f785e9ffe66e11f24adf6682d3af2cdf4c7be5ed28d45766f76d80587af834d6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "8e614f0fd6d7fc8e3ada885026217a4737e6b1880799b6d62c70d0579822eb6a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fede55219aded55bcdbed48513acd73324c0a8276316b75387f09036e2085efc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "40b1aba6b418c581190dd7f115b4b10d01cd1db13c1b57f15da0777d7ca057c2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "85ba31e64c41a30d4de29f0faf8dd6d3d1ab28632c2dd23344526f87c745f625"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ee3939d81f7f1791bd84c508c22d7888b6f2aecc1015202ae55aa625f2969ad9"
     end
   end
   license "GPL-2.0-or-later"
