@@ -1,25 +1,25 @@
 class Emu198xNes < Formula
   desc "Native NES verifier with interactive UI, headless script, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.39.2"
+  version "0.40.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-nes-aarch64-apple-darwin.tar.gz"
-      sha256 "50f8c491e2bce127dedcf80bb1df34e9bcb99acfe43365846507ee4b6a98ee33"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-nes-aarch64-apple-darwin.tar.gz"
+      sha256 "a27a1ef7fcaee358a05c4a402575e7a00b7f451fd398e2d58e75aca329bafbc5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-nes-x86_64-apple-darwin.tar.gz"
-      sha256 "8b365993437cf0bb5ee52919423cc5a9a15cd2d93e213088cf4cdcaf00a6715a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-nes-x86_64-apple-darwin.tar.gz"
+      sha256 "c09f3022d44626b0f49f93abcb224520b16f7f00e66a1a4672944932a9fbf71f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-nes-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d9869f2205682e307482c14b03de41b08c64a52c4ed0b7d527c13c3d130ddf04"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-nes-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1256fb8d5da61038b82b7b110403c54a4fafbac42a3595ee2d89662e50518ca9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-nes-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4f880ad3511048a56af49a3a058b97cf8175b1676a893f45f020d1fe90c158c0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-nes-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "29a26e6b198235bd796fcdc14e6a077228b111bc9ce3d69e1b35bb25cfc92138"
     end
   end
   license "GPL-2.0-or-later"
