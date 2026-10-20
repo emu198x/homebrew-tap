@@ -1,25 +1,25 @@
 class Emu198xAtari5200 < Formula
   desc "Atari 5200 SuperSystem headless runner with shell-backed script + MCP parity — 6502 + ANTIC + GTIA + POKEY"
   homepage "https://emu198x.github.io/"
-  version "0.39.2"
+  version "0.40.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
-      sha256 "0e651f53d0a8ed86db32cf8726c448243f48341d19157a0988e8ebc5ad224f8c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
+      sha256 "bbe7b9336dcefd6f3b3244c26878f611d21c77ba823b02d27ed787729f1347df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
-      sha256 "880d4d79866693ea8c6794b39796206ecb4d7df52e1a3e93e4e7686030a48068"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
+      sha256 "7d89da30fa3ffc4667f49f714101dbd67ebce3fe1482efa3134ed3eeff6364fe"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d0a24b2e74be50428a4cf4c5057c74f93a47491a2cc075a28b0e5743e25947f5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a72d62496f5be39584e48fa873df8c17551ee265e3d6fd230c6e28f4b406418b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.2/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4a64d176e67cec77511e5d6566998e874d6ea26a497a2554b0a95e6f91c2ffb5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f490cc7cf3f04a1a48d96c219de1e8203aa4b2e1df80e0544b2f28fa7ca14bc3"
     end
   end
   license "GPL-2.0-or-later"
