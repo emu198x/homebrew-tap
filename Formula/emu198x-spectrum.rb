@@ -1,25 +1,25 @@
 class Emu198xSpectrum < Formula
   desc "Sinclair ZX Spectrum emulator with native UI, scripts and MCP"
   homepage "https://emu198x.github.io/"
-  version "0.40.0"
+  version "0.41.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-spectrum-aarch64-apple-darwin.tar.gz"
-      sha256 "e58ae6ee76acaa6e1c8f9240b78d2f466b6acc451821c159b28ab08577f506bf"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-spectrum-aarch64-apple-darwin.tar.gz"
+      sha256 "201c3fdfa90cb1e976c2916b20dcdb1f77704b91cb05368fca75c9015d69bee8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-spectrum-x86_64-apple-darwin.tar.gz"
-      sha256 "509f4a3e3b520a198f855a9858df9e08ec5b9cc4c35137172097562844a965ab"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-spectrum-x86_64-apple-darwin.tar.gz"
+      sha256 "d2c96d720f0b01f4c68e51f96f4fc6de5b46b5761841a108f174425a24d810aa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-spectrum-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3a9fd0520e6ac55b2d3355fe109d36d9f9695e24c126c21c2fde864adca0892e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-spectrum-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4e9934ceb00a6d64d42e7cc453a5a067954315d9c86fece66a2d0545d863551b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.40.0/emu198x-spectrum-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "920a0fde7bb0bacab67fcddc42fcd8c023b63fc8a027d3b727483732071de955"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-spectrum-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8c36d4d3c1c2c71dc66d37dc2c93eb31ac7cf781b3f397f3df30eaa25af034b3"
     end
   end
   license "GPL-2.0-or-later"
