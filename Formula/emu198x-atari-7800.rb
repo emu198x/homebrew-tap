@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.39.0"
+  version "0.39.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "6281f084a80dca293115a2d0096ab70fad0161aa3692314fa78db5a28c70e0d6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "52c9a0829afda069b662f55291aea054b2a97a8097e5d79f2a50b28aa468d3d8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "5ae01d5b64cc9c5b60dda68406548444030de0bb6835b7fb1377caae4f64eb21"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "bb1c0d1ebeef4dbe09b4a0fefa00d2a31238abb1d73a7ebd78d5132864e4e28f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "27bcb384e4283c0cbda6081c6bc80338c243ca187b507a97d07cd96b0dbdb66f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e44fe9d2063cc6777398000e8f0e4c26fa9a1647c7e33435a86fa52bae65685d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.39.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cd89bc0454f121bd1e8aac317a5f0c03c7e27e521303285db00e2bc087ad9d79"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.39.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b6f83eaab42f2b5d9765c737837dd2fe684a6945f2f34f44a4893e0ab91e3977"
     end
   end
   license "GPL-2.0-or-later"
