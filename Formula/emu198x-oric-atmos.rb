@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.42.0"
+  version "0.43.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "0acf4ed18a4248398d847bcb02d9830ce995d35b55103a3863aa4ec7d4724aff"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "31b354dff72410ca96b8950710dc8138815e5a370627491815ea18455ff6ee87"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "29867001cc3ad6a8274eccb5c0fe3a0fae02be11fef5455f10e44284e63590a4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "07fe505234e2e2d2c56a815aef06679283d99905df850be7c42b8879b28b635a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8705c24468986c4a6e78132c49ae7f0313566429b5dac17ad7739219519b05ed"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "663e2981e1b1b6307d64028607a7edb2e3ca323b12c819d32ad6197ecfcea2cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "50d8caefbb6a7ebf09565e9a0c7b74d5c6c24da715747499b290f49b5ae615a1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "15f956fb559cab3f0943258686aa12c339bbb87bef3cd7d7c5e7da1a043d701a"
     end
   end
   license "GPL-2.0-or-later"
