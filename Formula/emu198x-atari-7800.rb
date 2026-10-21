@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.41.0"
+  version "0.42.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "f5b92807449f3c40b9cb2e86cb2e104b7333d4d29d0c54eb1bd59877628042ea"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "bb1c59ba3e07ea85306289ec5fe756ddb1b497b26358bd1f49c8a35a8c293379"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "ae5b99155d98b8aca704425e4a80d3af7f3518a32428084e80838b7eaf0b2285"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "6b06d8824884dd67e50ca3614784f9c8eeeabac58cf45b42461859da07da2cf4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c37ba22d767be76c3bcf9d53803ad3959f16a7ef69b8e436d2e3cba21df8ab75"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3690e5f6bd1cd824b35504e7b073e91a511446304da1eea0d6c29fc000e54ffb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3e259638f3487c3a9d662f01ea802e2663e914a6fd6fe10eaea9f12aa53d5f50"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6c17483dd54b151b2956fb5fb80ee1902430b4659349366b84cd0715f4324085"
     end
   end
   license "GPL-2.0-or-later"
