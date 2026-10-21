@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.43.0"
+  version "0.44.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "31b354dff72410ca96b8950710dc8138815e5a370627491815ea18455ff6ee87"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "baadacbadcbc275846f8a55f7c67c577df8b922d151c5e4dd3861afec12bbbe7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "07fe505234e2e2d2c56a815aef06679283d99905df850be7c42b8879b28b635a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "3bf4207b7c949a6ed483e5e3901d8bd1354f5e576fd88d51801276e69b2e2077"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "663e2981e1b1b6307d64028607a7edb2e3ca323b12c819d32ad6197ecfcea2cb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1fbe4a72c03b97f795d5b180ed4ae798e1df6d109ae955c4912c794e30033fa4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "15f956fb559cab3f0943258686aa12c339bbb87bef3cd7d7c5e7da1a043d701a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bc9fd0ad5f23aeb191fc24055c090c80effd2c4930cdbddab71ed5562ca99178"
     end
   end
   license "GPL-2.0-or-later"
