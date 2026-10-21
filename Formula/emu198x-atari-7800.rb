@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.43.0"
+  version "0.44.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "439d09a1b07e41fc95db7d8b227bc453eb9033ad595dddfe07e785b6cc207502"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "60a02741062bf660c33a3f3d423062b8658885eecdd58c33db5e86122d7527b0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "8a61f933d957130790f8133ad30146a0b7b7c9c2b9680fd11885113c2b7187cf"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "6d558774824d9f5b8bf5b7c00a534e9d65970f8dd884aded8744609b6315321b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "30c9f9a99118df7f7dca9460e4a5697034df51b78bea62380504dcfa601de7b9"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9a15947e9accb85c5711657752f232cc983b3fda20be959303e1385d4d2b6b5c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5eb4bfd8069c9e28a6ed51c8fe42790691a6c12ac306bf1d47458c40a4fe3bdc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e8dd527d31d855b75630ffaba804bf785096111b95e48fc3fe8baa501bd1c21c"
     end
   end
   license "GPL-2.0-or-later"
