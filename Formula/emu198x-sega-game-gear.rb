@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.41.0"
+  version "0.42.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "7ec38d112516a7167e4b5fc8ae1aee267a0a7d7eed31ab63ff065c08e02e1b67"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "f4e099eea181f6d81d133ea11e73c1103539f15f72be97794bec6d63f3718c7f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "676af34440baf49093d1ba4754c61284c347bc907833a7f56c8e47329b1ccb70"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "42983828b981bd8838df34d0b464c6ebc6ae94b5a18fc9254b5bbc817584ce72"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d195ddf668456779aa0b21b5f5d464be0cdb9f5387219825a36b7a5fb3729c0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b1b9cd1f5233e8d84a2fb4bbd99d330b981245161211548390767fa3e4622dfc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.41.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8ea0a06717b3f44c3d9d58a55bfd0fea3a529fabd45835fd7b3678dc72bcc51c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "34f91a354cf1cd1016f6afbe57da7acb9a660094020e8973ef28fd88cbd0e263"
     end
   end
   license "GPL-2.0-or-later"
