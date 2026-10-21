@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.42.0"
+  version "0.43.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "bb1c59ba3e07ea85306289ec5fe756ddb1b497b26358bd1f49c8a35a8c293379"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "439d09a1b07e41fc95db7d8b227bc453eb9033ad595dddfe07e785b6cc207502"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "6b06d8824884dd67e50ca3614784f9c8eeeabac58cf45b42461859da07da2cf4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "8a61f933d957130790f8133ad30146a0b7b7c9c2b9680fd11885113c2b7187cf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3690e5f6bd1cd824b35504e7b073e91a511446304da1eea0d6c29fc000e54ffb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "30c9f9a99118df7f7dca9460e4a5697034df51b78bea62380504dcfa601de7b9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.42.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6c17483dd54b151b2956fb5fb80ee1902430b4659349366b84cd0715f4324085"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5eb4bfd8069c9e28a6ed51c8fe42790691a6c12ac306bf1d47458c40a4fe3bdc"
     end
   end
   license "GPL-2.0-or-later"
