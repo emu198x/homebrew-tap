@@ -1,25 +1,25 @@
 class Emu198xJupiterAce < Formula
   desc "Jupiter Ace headless runner with shell-backed script + MCP parity — Z80A + 8 KB Forth ROM"
   homepage "https://emu198x.github.io/"
-  version "0.43.0"
+  version "0.44.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-jupiter-ace-aarch64-apple-darwin.tar.gz"
-      sha256 "15d11ca33375331c543546562a59ae1daa4a3c9755113fd2b02f4b132f4bcd57"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-jupiter-ace-aarch64-apple-darwin.tar.gz"
+      sha256 "f586c521f7b6c82a98422f6ac9650bd20d853c8ba61d405488404b3f89c9679a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-jupiter-ace-x86_64-apple-darwin.tar.gz"
-      sha256 "77ac78835f9c6aaa3aaa7eaba1ec4ae2cfd2cdc8c840216b37a97625c96a0b12"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-jupiter-ace-x86_64-apple-darwin.tar.gz"
+      sha256 "eea7cf485b87983bcdefb25674c6c5ac4c1cfed3b5c9bf381152a36e08c16a5e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-jupiter-ace-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a31d6c506cd18496e5620c850c52b411bef02ded2a78ca3cc8e198b5d077e08b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-jupiter-ace-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "719f1650d1701f2f01edabc1fbcf3971de735f4269905150aee8bed31d39940b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.43.0/emu198x-jupiter-ace-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a70777023a6efe9163a208397bd7b8691d2cddf87d607b8a2771f6eb8e2404d0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-jupiter-ace-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c8251c4dc0589fc7b9c397ee80907265ab073915e273f1246591e7e97f0d475a"
     end
   end
   license "GPL-2.0-or-later"
