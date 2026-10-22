@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.44.0"
+  version "0.44.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "60a02741062bf660c33a3f3d423062b8658885eecdd58c33db5e86122d7527b0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "792203b5c940d00791e8d8e9c63c134022a53524ad68c59643a88901c89e86f8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "6d558774824d9f5b8bf5b7c00a534e9d65970f8dd884aded8744609b6315321b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "33a650355204fff24add30f89671b59c7c1210fae5e093f79a0b6c4411465503"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9a15947e9accb85c5711657752f232cc983b3fda20be959303e1385d4d2b6b5c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "eee5a0871888ca3bd8f96b09031cb12500e8441b44341c2d159d6f754fed0dbd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e8dd527d31d855b75630ffaba804bf785096111b95e48fc3fe8baa501bd1c21c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "239b4e319c38855c6fa7feb77c9d8c6615f0f92b8baea582bd7345d8f032d6b4"
     end
   end
   license "GPL-2.0-or-later"
