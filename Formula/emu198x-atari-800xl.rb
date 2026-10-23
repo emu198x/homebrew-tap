@@ -1,25 +1,25 @@
 class Emu198xAtari800xl < Formula
   desc "Atari 800XL headless runner with shell-backed script + MCP parity — 6502C Sally + ANTIC + GTIA + POKEY + PIA-6520"
   homepage "https://emu198x.github.io/"
-  version "0.44.1"
+  version "0.44.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-800xl-aarch64-apple-darwin.tar.gz"
-      sha256 "f06aa0a40bf63ed4e7ade3fe9be5493acb96a618ba14a7266a2285a65dcbe04d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-800xl-aarch64-apple-darwin.tar.gz"
+      sha256 "fb403352674b21ff4f3bf66027759415d6e6ac3e8028dc13cb5eb94931ec0af1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-800xl-x86_64-apple-darwin.tar.gz"
-      sha256 "84390640ee4e1ddc12f19fbb52f68b0481102a2ec50011692b2ea140ddb88509"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-800xl-x86_64-apple-darwin.tar.gz"
+      sha256 "a24316a871d66e22a05c946fa1b20743c31c6c5770fae0fd2bb20ecaad0dec40"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-800xl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4b372ed56281273ff3c4e546b71f9662663351c9f3b1b9048bb511e5ab809168"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-800xl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "79e01c5ab594ae12c1032a5c18e7f1c2e430798a3053b1087370a913b1e82849"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-atari-800xl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f6576a62cb0bf2bfe7f2fb51b8d310987aa7ba65e90a08184320ae1acac40e49"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-800xl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a7897411e2737894f19012ba7365c46528bacc7673b8389600f218bca06c16e2"
     end
   end
   license "GPL-2.0-or-later"
