@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.44.1"
+  version "0.44.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "38a8779668ad9ae20504e3903fec9bf83aabbc1288813bcb49b2e1e3a2a16435"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "f31b87a9ebf4dd1c0cbeed7cc0b74b7d361d2d71e813986fc0f725fce599aa48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "5cae85f551d3dc5124f7610647b4f84fcd9faf3572cb8785bfe121526bf8e475"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "42e8bec6aca686526ff491b76cd9fe7e6a93057e266a86335b49ef5553a565a5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d955c1ea326ae2f83bc33502bf6e2c9eb8ce497db685f059a22f0aeb8ce93a1a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "42e12f2f32cf524d204688414eee9a00063e274de9f108b312f10ba8b560f4a5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "895ac657f7020340ab219d2f498ceb9d1f58d4c354fba3fad58bbf34b1db4a08"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b292fd26b51e2585d7873b0273aa3a6ac7535e441ae51a07703891a34f95432b"
     end
   end
   license "GPL-2.0-or-later"
