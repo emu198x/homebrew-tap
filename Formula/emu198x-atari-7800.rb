@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.44.2"
+  version "0.45.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "625fefc6794a04b9d63f1c350372abfc76ee006afae0ef57e883dbbcd7fc68fc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "d834eed459edf8ba6f56078beced704bb0bfc10ab1f74509365eade647ce4d40"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "ec74f722e25cda536572e28d8f29efd93bb566cdaba358f894c67b226efc912f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "1cae3186c85586ebdf61fb2a91b702c19b9f019ce27c715d2abf2a0ee0ef0889"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fce932ab9b9fb8412117dcf4b73ddf85faaf2535035c342821faaa28e5d1b061"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "44ab5467df29538e7de2fa1dd5d37789c8f406aafed48c1030e052e0b008549a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1709b8eed0c74c351384fa406cfa2cd0ad82ce8dbac63e0269efaffc055904e6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1dc0a7a76aa463a72b36d767f4b03b84453465d0e9f378577d372f4288fe826f"
     end
   end
   license "GPL-2.0-or-later"
