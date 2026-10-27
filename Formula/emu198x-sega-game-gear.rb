@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.44.2"
+  version "0.45.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "f31b87a9ebf4dd1c0cbeed7cc0b74b7d361d2d71e813986fc0f725fce599aa48"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "220b69317d45fa1a3033f7a78041bd0771ea3d79ca5190a7d16e1ee6370be6ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "42e8bec6aca686526ff491b76cd9fe7e6a93057e266a86335b49ef5553a565a5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "4e415400ba851d76b2c58b87c38d0d3109a657b328e6f97ad5aae96de487d47c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "42e12f2f32cf524d204688414eee9a00063e274de9f108b312f10ba8b560f4a5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3a55598985fabdc4d7042820d94aeae963c2c835736cbbb115d055e5cf227264"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b292fd26b51e2585d7873b0273aa3a6ac7535e441ae51a07703891a34f95432b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b9369a0b3e1bb3c0b9d19bd07c2605ec23feaa0ad16e8118d1b2949651951cc3"
     end
   end
   license "GPL-2.0-or-later"
