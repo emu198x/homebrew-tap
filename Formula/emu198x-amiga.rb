@@ -1,25 +1,25 @@
 class Emu198xAmiga < Formula
   desc "Native Amiga verifier with interactive UI, headless script, and MCP debugging modes"
   homepage "https://emu198x.github.io/"
-  version "0.44.2"
+  version "0.45.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-amiga-aarch64-apple-darwin.tar.gz"
-      sha256 "aaa65eb6fb26c5ca9a69b5434b02626eafd860aa66a90db526c91e02ed90604a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-amiga-aarch64-apple-darwin.tar.gz"
+      sha256 "aef80a4f4d91f52b1b6f751cca691cd940df97bf4050dce945d086ba09180dd0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-amiga-x86_64-apple-darwin.tar.gz"
-      sha256 "5f2b448c072a726b5699087ef6b21eb0509d8f812c82653bd94739ed9f8c6cc8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-amiga-x86_64-apple-darwin.tar.gz"
+      sha256 "f0b11e78d5695b96eeffdb5d1e125ab0360ecf1218055b5ba945dfcb2c45f36e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-amiga-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cf00b01f73d0024e6257b029ce7e5f79e924a8d95db81a0ddac7e764100f6c87"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-amiga-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a876e823e8688feb5d84003a4aabfd7d968bb344e876b323733c3da655c60ef0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.44.2/emu198x-amiga-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "43ed5829256fbff231ce02b83305d7a5003b0aa8c0275d9c2aaece90236553c2"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-amiga-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "80b67daf268aefcb45fa501474a447ca44522bb33e4a5e4a73c283b64834f6de"
     end
   end
   license "GPL-2.0-or-later"
