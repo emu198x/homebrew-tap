@@ -1,25 +1,25 @@
 class Emu198xAtariSt < Formula
   desc "Atari ST headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-st-aarch64-apple-darwin.tar.gz"
-      sha256 "44b9239d24b841ba1c7e7c2e62a61c118d71d55356633f5ec3faaad963800967"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-st-aarch64-apple-darwin.tar.gz"
+      sha256 "a7eef4ca0dbc0ffb19d5ccf6033289c7e79f8b38533cb3a4fc9a43cfb8cafc31"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-st-x86_64-apple-darwin.tar.gz"
-      sha256 "a7db63238ed0232bb417993fec49962cb8caae8c993cc8845a6574da0597a95b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-st-x86_64-apple-darwin.tar.gz"
+      sha256 "5bce702b87e6b676fa7ec67b73514db6ccf5c39ee2f021d3c9f811edd9a4c3a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-st-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ee4cb5c2dedad93b90bbc039b612f858a37a47abdb6f2eb955afeb22ba8e748c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-st-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7338cdd16e457870f92a25f01863513421fd9d3529f91c8855e220d33ea36c58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-st-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f2875d7540686f8b210256dc0da21cd1e0668a72b44a88c291807251b5a4adaf"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-st-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6ba5f12d0d79f33b214c74a31cebe13336ab378addef2f035bccf7b5429a8ad5"
     end
   end
   license "GPL-2.0-or-later"
