@@ -1,25 +1,25 @@
 class Emu198xAtari5200 < Formula
   desc "Atari 5200 SuperSystem headless runner with shell-backed script + MCP parity — 6502 + ANTIC + GTIA + POKEY"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
-      sha256 "51a1d00cdc6ffdb46f6534ab9bc297d3686e9869d32fe5ca592684c0b5184344"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
+      sha256 "a2e1b39b8deaef05de7229b4297f11caa22812a087666e14419bb1ce53f5c5f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
-      sha256 "9f3680d643f989f180f54367440c0bebdaf13aea191250a00c280d27f1ffc7ec"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
+      sha256 "371663fc854c22c0c43c365dbc0a8be495ee82f497f69643662b47d936377380"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2cb5e389352e14d803ca30853692a646c2061ed49a6d73e5bcea07d3871559c6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "284ce7461fc3c01a3e1f5a51c778814b4ace8f05322c87a0afc5f5142196896c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d56ad5384595744df562801fe62f9d5dbece136d164301011ec81e8bd9076002"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3148e7605285551e023db2d06cf25f0e74aa1e4f0512c17d74f81019740cda2e"
     end
   end
   license "GPL-2.0-or-later"
