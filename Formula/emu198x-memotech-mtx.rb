@@ -1,25 +1,25 @@
 class Emu198xMemotechMtx < Formula
   desc "Memotech MTX headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-memotech-mtx-aarch64-apple-darwin.tar.gz"
-      sha256 "41f881a9fc124bcf26eb19bdde7759421a41a57ce88c7dbe3bf55f7a637edadc"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-memotech-mtx-aarch64-apple-darwin.tar.gz"
+      sha256 "6589dd2b93c573b58a0d897ef222fbfce61ba50ec2ea837c0e56d006d1316c53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-memotech-mtx-x86_64-apple-darwin.tar.gz"
-      sha256 "a592bf13d6a0b958dbfd668dc9bbb68c516296a7dd5575c6beb23210d49a5157"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-memotech-mtx-x86_64-apple-darwin.tar.gz"
+      sha256 "b512d195a68e83a26335c1549d0b4beb1b6950550e84d1d1e2f1169d59b64b53"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-memotech-mtx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "658593c949047da046d69f641b1cd0813bfe1088d7c19a812e373fb2ea30dbf0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-memotech-mtx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6457151048ab9a0086b902e2f4c9b592b41e219142c72a787d1b275b6c38bc99"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-memotech-mtx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "83e617b38a7cd75d29a4f5e70f7e1f6da450d42fc99dd0b7a439d209b583bea6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-memotech-mtx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4d55f9978842cbf1be483d8376c7cdd2c9a05eb725ddc017e6f715fdebc5a6b3"
     end
   end
   license "GPL-2.0-or-later"
