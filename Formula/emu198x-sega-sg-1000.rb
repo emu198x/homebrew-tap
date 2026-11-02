@@ -1,25 +1,25 @@
 class Emu198xSegaSg1000 < Formula
-  desc "Sega SG-1000 / SC-3000 headless runner with shell-backed script + MCP parity — Z80 + TMS9918A + SN76489A"
+  desc "Sega SG-1000 emulator with native UI, script and MCP surfaces — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
-      sha256 "fd2bd2dfeb62d8a6a4896a150a328b0f97aa3c2ca30d565b199d1be2f0c9054b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
+      sha256 "a4251bb714081cfc7774f7f59fb5d88dee4bdfa9cf70e65e5ca27e0a72c5a949"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
-      sha256 "c10b1af060d0fa333a8ea33693b505c2cb33dd945acfe15fbfb0d0b7818f4d74"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
+      sha256 "db25ac0ec8e432b1b761168a4aa66a2c47981e11a2ab4b625f106454bf1c3dae"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "73129c3b3bbb131ee7d9e768538287ab757f2e9c89a1bde21dbbbe33c032b802"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c97dec456b81a04c9a204394f6b4f6a1d4e069ac3b94b17317e88de8b23138aa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c3180073d22e1f4682c2ac5cac56bcfb323c5c27af6a4da37521eda338ea2768"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "75813996dbb6a48f43826a8b598b54d9539807ad3968375e2ac81359a8b9dfdb"
     end
   end
   license "GPL-2.0-or-later"
