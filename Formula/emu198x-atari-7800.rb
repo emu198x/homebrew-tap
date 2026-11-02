@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "d834eed459edf8ba6f56078beced704bb0bfc10ab1f74509365eade647ce4d40"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "9f8502f6a9aa7855d396fce891071f8800622c457622e9a8ddce26f7fae29b75"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "1cae3186c85586ebdf61fb2a91b702c19b9f019ce27c715d2abf2a0ee0ef0889"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "9c293f1c4f3449d27f5034fdd1091204b737a61f0c210266d710d4ff1791f807"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "44ab5467df29538e7de2fa1dd5d37789c8f406aafed48c1030e052e0b008549a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c2fb05da45aa4127e80d8ec9547a4789d83e580e910e93eede59867acd352041"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1dc0a7a76aa463a72b36d767f4b03b84453465d0e9f378577d372f4288fe826f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2bba3b1853a0cd1175d7025630cb42ed53b7c2d2b568dcd4980c9ab81587fd76"
     end
   end
   license "GPL-2.0-or-later"
