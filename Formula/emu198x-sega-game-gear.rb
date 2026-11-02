@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.45.1"
+  version "0.46.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "220b69317d45fa1a3033f7a78041bd0771ea3d79ca5190a7d16e1ee6370be6ea"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "267a1da984407913d310bc423b7cd4aa7f2570f298edcd42ab780363d0f3f4dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "4e415400ba851d76b2c58b87c38d0d3109a657b328e6f97ad5aae96de487d47c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "04829cca6026af63dec8e4a2b5c8a038ed5d99a08f3aaa92106c4dda201b50cf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3a55598985fabdc4d7042820d94aeae963c2c835736cbbb115d055e5cf227264"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b0ffb2399ea5284e6cbd3edb397eaa653afb4a436994a147ba3eff655a20ef55"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.45.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b9369a0b3e1bb3c0b9d19bd07c2605ec23feaa0ad16e8118d1b2949651951cc3"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2378575c55bb315664ecc0da73bb32c9966ab78d99c7d2d39c68ba76da8e492d"
     end
   end
   license "GPL-2.0-or-later"
