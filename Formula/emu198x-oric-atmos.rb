@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.46.2"
+  version "0.47.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "a122ac71fbb66e9ab2326e5bb3abbc96935c086ea9832be6834b10564e27d047"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "3d4c89cb9a670b25b3bdb0a4aa39e2747aff7e4dbb7e4c34c48346255f460332"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "00fa2e408a043e3a979f90f2bc3ddeec9f5f4ab2a72fc10f659d97fb0da7b3bd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "2dfbbd6ce77568d52ea3a3fa58e44e7d0dfa55780cb388edf534be58ae596306"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a47ca4d921031b046182ecb79bbc9e50042aaf1e7e9751fb3438f0bc751f4635"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d55ad3727b8d6b5e16e5446bc9f2bd91961cd158f8f409d676348a2c409de3ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ee052fef3b683a862cc5126205f896c550c1817e332610d11bf5e2017017d7a7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "86a7382a8c406a8a25ac5c95efd3cf0919b79c1a64e21653edfb17c8a13d79e6"
     end
   end
   license "GPL-2.0-or-later"
