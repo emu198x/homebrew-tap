@@ -1,25 +1,25 @@
 class Emu198xSinclairZx81 < Formula
   desc "Sinclair ZX81 headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.46.2"
+  version "0.47.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-sinclair-zx81-aarch64-apple-darwin.tar.gz"
-      sha256 "3fe83b2e5c61eaa80c40ccd27a634881623d1be7e2699363f778bb3c6c9d5cc7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sinclair-zx81-aarch64-apple-darwin.tar.gz"
+      sha256 "26e70d59f2ae302f980f10b81e393088f4287d535fa8a9c2e15adea0cbd68f9d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-sinclair-zx81-x86_64-apple-darwin.tar.gz"
-      sha256 "28bfcd333c189df936e479167ec99c3ef422eff5f2a7317d64fd25f02e20c9db"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sinclair-zx81-x86_64-apple-darwin.tar.gz"
+      sha256 "ee11f9aef22984ccb560575ee4d684ff6b74c407e19b93df0a599dc9594730ea"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-sinclair-zx81-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cff1cd61b2a7f9211c97f7ddf8f4ea26cbcf23215c98e4f1add7754966348bf1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sinclair-zx81-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9adf13308f2f6974de90091707f4e3978fa71532204ba604ba27975064117955"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-sinclair-zx81-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "46ac6371dddf03c808ca36d3588d5ac3f927ae9e46eaca33b1551bbbaec6d7bb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sinclair-zx81-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9604575205ee163ba3490d68e3d09dbf3aa26dc09efaf0943154f3dbf49dd963"
     end
   end
   license "GPL-2.0-or-later"
