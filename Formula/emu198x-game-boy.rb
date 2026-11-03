@@ -1,25 +1,25 @@
 class Emu198xGameBoy < Formula
   desc "Native Game Boy verifier with interactive UI, headless script, and MCP modes"
   homepage "https://emu198x.github.io/"
-  version "0.46.2"
+  version "0.47.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-game-boy-aarch64-apple-darwin.tar.gz"
-      sha256 "b8794e350c6933af7d85fdae07434766b5d30bec56be5ad218c29bb2caeb07d0"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-game-boy-aarch64-apple-darwin.tar.gz"
+      sha256 "e7866c241ba5689569fbfb495ad2577820f4c5ceb2d7c1091e86f5aba24bcd51"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-game-boy-x86_64-apple-darwin.tar.gz"
-      sha256 "8fcf396343410d8a9ae6d91e6a62dad983fc78ccbf7b426a0a69b5496e3f31ac"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-game-boy-x86_64-apple-darwin.tar.gz"
+      sha256 "da4551680a0b3bf411a73ab794710df3d8e5f8530ecdc8550a79704ee558b2a0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-game-boy-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "633fa5439db60a02e0daa542f94ddc6afce8f9f78375723c15bc2fb374b0507f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-game-boy-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d01d2246809f2f15874bf9f948caf9b251dadeb3204405e4648d6159eb1f852e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-game-boy-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b1d4d6a7519ca7bb91ab44157dd8627d7f5b0308b99473d6e6b405ec85ee25a3"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-game-boy-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c523c3a1ae7428eecc9e2314e57d9ccc00d968a57074209f4fa2c356a20a486c"
     end
   end
   license "GPL-2.0-or-later"
