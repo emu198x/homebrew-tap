@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.46.1"
+  version "0.46.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "9f8502f6a9aa7855d396fce891071f8800622c457622e9a8ddce26f7fae29b75"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "57b3d858f797744ff3c9dfbcf757efba0c4f442a218c4d06491ee0b33991b33c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "9c293f1c4f3449d27f5034fdd1091204b737a61f0c210266d710d4ff1791f807"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "3b9afb417121269e018db894e8c9d2c437db53ddc3a216551aacc87596101a52"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c2fb05da45aa4127e80d8ec9547a4789d83e580e910e93eede59867acd352041"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b0fddb846bd1296920f50a3f9c97d4bbd6b7a98de56d3d0c2923d210ecca3ef8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2bba3b1853a0cd1175d7025630cb42ed53b7c2d2b568dcd4980c9ab81587fd76"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c3ae383c7a3e1af572a501dda6e55a22c6700496269a6d740e8508703d8e6e4"
     end
   end
   license "GPL-2.0-or-later"
