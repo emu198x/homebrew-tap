@@ -1,25 +1,25 @@
 class Emu198xAmstradCpc < Formula
   desc "Amstrad CPC464 runner with shell-backed UI, script and MCP parity — Z80 + Gate Array + HD6845S + AY-3-8912"
   homepage "https://emu198x.github.io/"
-  version "0.46.2"
+  version "0.47.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz"
-      sha256 "774316cb37afa294b1bb453e53ac1e988b7431b1af7059c87780847bb2088db6"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-amstrad-cpc-aarch64-apple-darwin.tar.gz"
+      sha256 "5c226ad550c5ea07cbc136305594de36da8ec243c0f6626aefae8d2dcb93e765"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-amstrad-cpc-x86_64-apple-darwin.tar.gz"
-      sha256 "754233a9c1936bcda841baa8e16ccc47700996f2e984bf787675f5897ab9315d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-amstrad-cpc-x86_64-apple-darwin.tar.gz"
+      sha256 "7979d916321e5e6eb3d18226bb414becf026ce0bff4393ae403bd9f9fe1397e2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-amstrad-cpc-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cc097b9190f5376119e65d6676bceb32999f3248478093309befb71903d8a080"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-amstrad-cpc-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0ba47808c4eb5649ac12f3868533e781b2970febc066f6ecf18f810d00948bc6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-amstrad-cpc-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f905eeebd98078e6bbc0f2f45c3d6575a95f3932fdc3d148b23d71b888c9a542"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-amstrad-cpc-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ad48d556d2079ba9912e3617b2b6766cdcab1e91415b7d96a6d8c33ec4aa8ce4"
     end
   end
   license "GPL-2.0-or-later"
