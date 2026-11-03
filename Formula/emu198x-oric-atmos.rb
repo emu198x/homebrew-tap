@@ -1,25 +1,25 @@
 class Emu198xOricAtmos < Formula
   desc "Oric-1 / Atmos headless runner with shell-backed script + MCP parity — 6502 + ULA + VIA-6522 + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.46.1"
+  version "0.46.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
-      sha256 "df9c9b986556e93669147f922791369cd9ccd7e59226b6328e4c18f160efe407"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-aarch64-apple-darwin.tar.gz"
+      sha256 "a122ac71fbb66e9ab2326e5bb3abbc96935c086ea9832be6834b10564e27d047"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
-      sha256 "62f7de838f3157675eecf93541ea63db0fcbba63523d23811b321c1712fa5722"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-x86_64-apple-darwin.tar.gz"
+      sha256 "00fa2e408a043e3a979f90f2bc3ddeec9f5f4ab2a72fc10f659d97fb0da7b3bd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ed536952b97290765de7a8db70f5c4489b5c46f593340ef65b343d7abf623b2c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a47ca4d921031b046182ecb79bbc9e50042aaf1e7e9751fb3438f0bc751f4635"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "927ce6f358ca0ef6d7f3082cef056e3a4298dddb5b473f8225ba7ad82b0b72f2"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-oric-atmos-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ee052fef3b683a862cc5126205f896c550c1817e332610d11bf5e2017017d7a7"
     end
   end
   license "GPL-2.0-or-later"
