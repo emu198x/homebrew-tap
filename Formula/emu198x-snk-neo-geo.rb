@@ -1,25 +1,25 @@
 class Emu198xSnkNeoGeo < Formula
   desc "SNK Neo Geo AES headless runner with shell-backed script + MCP parity — 68000 + Z80 + LSPC2 + YM2610"
   homepage "https://emu198x.github.io/"
-  version "0.46.1"
+  version "0.46.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-snk-neo-geo-aarch64-apple-darwin.tar.gz"
-      sha256 "507d5503177240aadc1446185f654783e9fbaa49f1308acc045743440d5ef572"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-snk-neo-geo-aarch64-apple-darwin.tar.gz"
+      sha256 "c8e2a8df8c9303f2e19fba6d92bb41378767cafb2c73395eb905259511750065"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-snk-neo-geo-x86_64-apple-darwin.tar.gz"
-      sha256 "1b8f99f033677bba540ab7a5e327c9fae5926f69bbaa1bce7d2fe74f7704bee5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-snk-neo-geo-x86_64-apple-darwin.tar.gz"
+      sha256 "d6dc4008c1d0ee8af88aac019ac5071cc9f7e9da9e3fa4ae2af10b2b2cf575e1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-snk-neo-geo-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c7a6915840ac0c5c99affb59340a0f4293bde5165d394903d5f34b79661920a4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-snk-neo-geo-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "69b460d252c2894694963621789270c2487dd63086cacc9ccd743232d85dcf2d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.46.1/emu198x-snk-neo-geo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f230e6fa4c3831816b4d920e5220093398ed81aab4eecd7f29b084f73ef74b36"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.46.2/emu198x-snk-neo-geo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "96a46f493f6fc0e1625638c70b016fd3200e2ca69e889e0494494db8edecde69"
     end
   end
   license "GPL-2.0-or-later"
