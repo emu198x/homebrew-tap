@@ -1,25 +1,25 @@
 class Emu198xSegaSg1000 < Formula
   desc "Sega SG-1000 emulator with native UI, script and MCP surfaces — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.47.0"
+  version "0.48.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
-      sha256 "65c643b0b3f1422fe747f55cda9d9975d9562ac0184e7cc3d4aa65b417b8a6f1"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
+      sha256 "939668abf4ec4c0cbf6aacc8ccc37848b409fbe371e4c219d241b90ce0c863a2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
-      sha256 "f954bf0a072bfc5768902cc0778e1944e4e4879535331ab39b970263e6c70749"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
+      sha256 "ba151e7ba226af9664696dc27e46247a03ba03d35ae1073a21732c70a438d44c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ce4833e8f460fe51fd585b56cda465af9f3f483f20ac79bc3fe611b1f43c9e4f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "476f006e3772768a3dd625a8defa4d66bcc0515045197d99a4f042753de61292"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4ad3bf45d689e29e84250db2763d92e0ae756e85483458209f58dc24ef15e5ce"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2db5575589704155374a02bd26bbf7cb2b8d6a463d7c787b5f9c7ac9d2c773ae"
     end
   end
   license "GPL-2.0-or-later"
