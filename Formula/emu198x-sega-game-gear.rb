@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.48.1"
+  version "0.48.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "aa5b5c8380d2399157ed215f4041c499d4adb9ff4c5509e7463b83aa6b49db1f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "74c6347b8835bbe59de641abe597e97257b47a3d15c9a09225c3a828173418ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "334979001bb40bb70b10b2f0c237cc5c57bc42570ec5e7e066eb6f3206b58edd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "0f76f15000cfe4488c2344f7c92b510859d5438c9bec3062f90493af8b3814bb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "00499577f7d8372c4c07e9aa15ab69c88c743b99963c41657ec7b66e0bc552c9"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "00ed4331f8f2c86886dd5e13a6d82c886561dd7209f458f70723fe1790a0a2bd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b6ba7626b0081bde164980f6c56517c686e7491fb2255dcca3edd1b57059698b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "79e9cc5ff49dd827d0fb09998dd06a60e1fad3ff6798dd0b62aa091b391a1fe8"
     end
   end
   license "GPL-2.0-or-later"
