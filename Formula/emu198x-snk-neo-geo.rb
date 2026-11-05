@@ -1,25 +1,25 @@
 class Emu198xSnkNeoGeo < Formula
   desc "SNK Neo Geo AES headless runner with shell-backed script + MCP parity — 68000 + Z80 + LSPC2 + YM2610"
   homepage "https://emu198x.github.io/"
-  version "0.47.0"
+  version "0.48.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snk-neo-geo-aarch64-apple-darwin.tar.gz"
-      sha256 "5353393dbb5e7c6697087f4c0b54721b9882fb456036cd7aa10fded30f00ba23"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snk-neo-geo-aarch64-apple-darwin.tar.gz"
+      sha256 "af76c4f30946bd5b571f9a9feb8c5ed9c94966099194bccab26af90836eb4bce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snk-neo-geo-x86_64-apple-darwin.tar.gz"
-      sha256 "e661f885ee4f438ed1563a0401513608cb016998ce6254153231fa8c87e5fd8b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snk-neo-geo-x86_64-apple-darwin.tar.gz"
+      sha256 "d5c90b3dd9fdbbd2b7d0460d82d0e4555b9ceea79d9edefacfcaa56d1c52e60c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snk-neo-geo-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2e9efc2a688d02a0393646f6cde84c6ec98c0995cf7157f20fd98915f91f3796"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snk-neo-geo-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "742cf51b05133ab2730475266ac48df32f802af4ee2ecdd5d72f8e1b92d85411"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snk-neo-geo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a0a2a8fe38a4666ceaa85d22098a681e88053591de00e4a0ccaca488f9477063"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snk-neo-geo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0a41170d12b6a5df82453881ca9638a623b79a38464b753d6135056e6e1c1131"
     end
   end
   license "GPL-2.0-or-later"
