@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.47.0"
+  version "0.48.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "f877ad101ca436d7e8d163f37b3f9b83c5aeda0dae0f183c539d7519661b278d"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "e93bdeaf84670faa93df4ec09bab844698e0593a00829969a51cdd6de8c78d60"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "48afa437301de9cbcce1e9b705426b406ea9b8f38068de436c198ec187e59206"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "79a5d0eca904b179babe86ce2714499f72c64a0f4c4b31d23139f485d63593b4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "dddab54aa35f11d28bbfdf1be67ccfa18d48dd317322c9de519b0055ceb9657a"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3390c5ff85afe06844e3a4c53a330999fb771a25cf7a147b4bebef074769b9d3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f7f7dc77ca061d4a19fff2e1451e9c84a3d0fb99d162072210e945cf346f196b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b58998b5e2e78420b9b4f4f592ebff40675863f4cb0ca80a84960c722fd063dd"
     end
   end
   license "GPL-2.0-or-later"
