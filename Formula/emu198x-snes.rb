@@ -1,25 +1,25 @@
 class Emu198xSnes < Formula
   desc "Super NES / Super Famicom headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.47.0"
+  version "0.48.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snes-aarch64-apple-darwin.tar.gz"
-      sha256 "1aa12c036706fa92dd6dfd9adcab98d6bffb018f801f4abaa1a084c5d6198e5c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snes-aarch64-apple-darwin.tar.gz"
+      sha256 "8db6d4ecb9cf7f5dd8544a0a8c6231c6bf6e95882051980b32543cd3f6da5fe6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snes-x86_64-apple-darwin.tar.gz"
-      sha256 "7bfd3d120108aad7c20e7a029de9364527bb7c1cb3e1bd569a4a151cd32ab66b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snes-x86_64-apple-darwin.tar.gz"
+      sha256 "578a88719653d5dd7bef565c2914e72c29a3cb1597faec383bffd19d6ae5aedc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snes-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d162197e9330b08db97eec38e36bfc50102cfdbf85d3aba846ab9949aa95aab5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snes-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6ea226e6f8d41769353b4654172b7bc8d772c71cd1b830a24512cb820942799a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.47.0/emu198x-snes-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "42224886a6a10c68460893a56cedff9aa7cb164dfedd93013887d225bc00d43f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.1/emu198x-snes-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0be65d1add89677835a0792691b82f0cd8225fc2abbd3eaee416ed9552c1fdf9"
     end
   end
   license "GPL-2.0-or-later"
