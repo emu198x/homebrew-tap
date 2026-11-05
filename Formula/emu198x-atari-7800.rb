@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.48.2"
+  version "0.48.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "3a1c045c6973b75d1c8d5c986b7269dc51a9f5b04ac1f132f5bd4fbca435440c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "95fd09e88d3c2ea9a67915f106657f2ada42865224edf1d45f2fa422b2f01956"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "dba7e34a60469b845e2ae6e1319a95c03f77100edea2dd2ea6e08ee4dd524f9e"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "6aee71fb58ba1849d88f75e6e8a1e1a66b627aa6800bff5a35a99be16f06040b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "31d42132018ff344bb9e09d3598292827cfa007c6f0a455c144a9b19a65d62cb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "77c53f07afc79d5c9f4e8248acda219bb58876816215eef1f8dfcbb580a0d9c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "625e2484c3266420176b7df18c4cc0b6c459ae04ebc7b049ed7bf520e1d3bd5f"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bbec40fa1e8304c6afbc345b063f1d20e59e255dc1d6d67f9e55c5a94aa4d764"
     end
   end
   license "GPL-2.0-or-later"
