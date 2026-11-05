@@ -1,25 +1,25 @@
 class Emu198xSegaGameGear < Formula
   desc "Sega Game Gear headless runner with shell-backed script + MCP parity"
   homepage "https://emu198x.github.io/"
-  version "0.48.2"
+  version "0.48.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
-      sha256 "74c6347b8835bbe59de641abe597e97257b47a3d15c9a09225c3a828173418ee"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-sega-game-gear-aarch64-apple-darwin.tar.gz"
+      sha256 "712cc0cae2e1bf7d01b5ee8687d9e552f9c3ae48ed0724fa799c4a63c9af3a27"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
-      sha256 "0f76f15000cfe4488c2344f7c92b510859d5438c9bec3062f90493af8b3814bb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-sega-game-gear-x86_64-apple-darwin.tar.gz"
+      sha256 "55aa02a8def46b27ba7c0861e44e7583c9ecb9748aa41cdf403a37db17e492b5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "00ed4331f8f2c86886dd5e13a6d82c886561dd7209f458f70723fe1790a0a2bd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-sega-game-gear-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c386bd1f73ba701a610f7c0cb372eb438f26819a51c33ef1f81c5a2de2bc92ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.2/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "79e9cc5ff49dd827d0fb09998dd06a60e1fad3ff6798dd0b62aa091b391a1fe8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-sega-game-gear-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1db0ffd1fcf678c4d60ab83fb41993ad3c835483dd449aac16c91fc7c0ee50ad"
     end
   end
   license "GPL-2.0-or-later"
