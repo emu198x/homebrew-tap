@@ -1,25 +1,25 @@
 class Emu198xAppleIi < Formula
   desc "Original Apple II emulator with shared native UI, scripts and MCP"
   homepage "https://emu198x.github.io/"
-  version "0.48.3"
+  version "0.48.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-apple-ii-aarch64-apple-darwin.tar.gz"
-      sha256 "26296e138bbed2972763767d26e7ee4e44411e9dbfebb3367bf24f2d4ffba9a4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-apple-ii-aarch64-apple-darwin.tar.gz"
+      sha256 "6d9a92c5d91c61448dfccb6bc767c817e622fe2ecbbff11613c7ce1a8d69c8c3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-apple-ii-x86_64-apple-darwin.tar.gz"
-      sha256 "2d0b707906a2d046ebace59712b69f69d4d3e06a09c65c7530bcd7089105d935"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-apple-ii-x86_64-apple-darwin.tar.gz"
+      sha256 "6c0aabf8317fd71dbe02d4b29e1e2475028e1ee4ae723d4c6bf01a9995b24c68"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-apple-ii-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "76a56d381f0b5023b0247719e83651182d0096fbec19cd1e9f739970922670e3"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-apple-ii-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b75620793be89898ae3f720060d3af163e641522515ed6cc37a69bff493f1245"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-apple-ii-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "297c2304f7af7a2e67508f6c65542e16eaf7fd5feaeff20801a4285fb2b4e6bb"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-apple-ii-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1eede1aac0925f00f7c4acd5cba8470cd67ab1af674d17c26a5a9662a4d056fc"
     end
   end
   license "GPL-2.0-or-later"
