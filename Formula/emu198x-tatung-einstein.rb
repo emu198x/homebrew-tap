@@ -1,25 +1,25 @@
 class Emu198xTatungEinstein < Formula
   desc "Tatung Einstein TC-01 headless runner with shell-backed script + MCP parity — Z80 + TMS9929A + AY-3-8910"
   homepage "https://emu198x.github.io/"
-  version "0.48.3"
+  version "0.48.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-tatung-einstein-aarch64-apple-darwin.tar.gz"
-      sha256 "eda7ed1b7f9fba1b0f9d356d82d08afe9d886141b28313ea85d33ff184d174a5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-tatung-einstein-aarch64-apple-darwin.tar.gz"
+      sha256 "ac04039deec15d75eb21d0bd9263998d59c67dc1917f26dc3c4d98d95bafb965"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-tatung-einstein-x86_64-apple-darwin.tar.gz"
-      sha256 "502969ebefed1b56d9ac290e96bac951b992951cbfb1580ff1b85c98f9e93f86"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-tatung-einstein-x86_64-apple-darwin.tar.gz"
+      sha256 "5f24a6565f5eb27c9cec7ebb7aa763f08bec8441b464b2930b5d88bd84c564ec"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-tatung-einstein-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8088e7806c4a09f6a50d5ea98e41360485c511c05e740e9775d3514da1b4f470"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-tatung-einstein-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c0b98d6190f45b80e2cd035bdcd33605dff4e3175b5b40a9f5acc287fbcb62d2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.3/emu198x-tatung-einstein-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f4d60ac7227674b5257b92fbf637f5d36fe38c366abfed6b7b6e2d8ce2c1736b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-tatung-einstein-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "88d59066f1a58d1daa6f8841ec332f092684b16b317835c9dd5770293594aa2a"
     end
   end
   license "GPL-2.0-or-later"
