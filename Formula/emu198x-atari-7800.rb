@@ -1,25 +1,25 @@
 class Emu198xAtari7800 < Formula
   desc "Atari 7800 ProSystem headless runner with shell-backed script + MCP parity — 6502C Sally + MARIA + RIOT"
   homepage "https://emu198x.github.io/"
-  version "0.48.4"
+  version "0.48.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
-      sha256 "6c09cae8d0eff6175a254f239cc9dd0e4ee5a0f007b69eb926d7096f372edb55"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-7800-aarch64-apple-darwin.tar.gz"
+      sha256 "c10db49e0038ea53df61925429dddd46def1b168fb7070937031b0b726dc422b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
-      sha256 "9dc218fc7fd15ab54134325ab4be703ca8d7171b16cb99249b2afad4a2133cb8"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-7800-x86_64-apple-darwin.tar.gz"
+      sha256 "dff88e7c9968d13ba1bfd11a4b4a11dd6e00129cab11458e586c4d8e3c84e841"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "787b3788fde6f52024c5b71bc04ecba16eeef200db103abf819a97b1c641d7f4"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-7800-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c9b1985e7408e3661cdf8bdaa359f691fb4d3337fa54cba054e7880c31418115"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "42b41246eb19b141681a10eb88bbd899145c1017eb1cc290ad87124cc4014559"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-7800-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1e493d269e37db42a08b3e9484dba990dd2f34dc869462ee93c61f47b31417e9"
     end
   end
   license "GPL-2.0-or-later"
