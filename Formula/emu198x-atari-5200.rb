@@ -1,25 +1,25 @@
 class Emu198xAtari5200 < Formula
   desc "Atari 5200 SuperSystem headless runner with shell-backed script + MCP parity — 6502 + ANTIC + GTIA + POKEY"
   homepage "https://emu198x.github.io/"
-  version "0.48.4"
+  version "0.48.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
-      sha256 "378d76baaf82326478e5ae1c5852e640d096b1813ebc7cbae091ca193b3ffdd5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-5200-aarch64-apple-darwin.tar.gz"
+      sha256 "2599fc83e1f56cc8c89a9ce271b4586b0b7504150815500b46bff26679cdca65"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
-      sha256 "2455221502455ee22c0e992f48ba69d843660af884072d27fd3d161fd28dd0a2"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-5200-x86_64-apple-darwin.tar.gz"
+      sha256 "0e7f89afc5242f247d476522e40e40c312e0037e03f224d8853339be29c4365a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "44cead14aa766e05c2ab2d6d0c4ef588670dc08d895174b4778e98a7e72a5cbd"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-5200-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e5a027cfaeb01612290da5733407a20f9e210cd483fdf84335c067af0dcf5079"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c2ec0064773215439de934f3924a50b7de3f9bce466ba2217d10f95e019e96c5"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-atari-5200-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "28a510fe79b458ddf26f4e81b4b092003170e3ad7738f72fee08564d6c2823d3"
     end
   end
   license "GPL-2.0-or-later"
