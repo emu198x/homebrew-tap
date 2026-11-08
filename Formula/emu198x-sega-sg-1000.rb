@@ -1,25 +1,25 @@
 class Emu198xSegaSg1000 < Formula
   desc "Sega SG-1000 emulator with native UI, script and MCP surfaces — Z80 + TMS9918A + SN76489A"
   homepage "https://emu198x.github.io/"
-  version "0.48.4"
+  version "0.48.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
-      sha256 "3dc710166d0a946ed3ae8452d672ac821203b17cc492acf2a6f263b0a76261f7"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-sega-sg-1000-aarch64-apple-darwin.tar.gz"
+      sha256 "0370b540515f7f816b9199d258f3cd95cc456b0323ecc219e66f4159f66d5d8b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
-      sha256 "7652606be0ff7e938ddd9c7e7f58a2adc674e825fdf4d9247ce0e49077ded14c"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-sega-sg-1000-x86_64-apple-darwin.tar.gz"
+      sha256 "e62597a968df88f2dbaf6b295d0e68159f4f58ebb95f8148693b4ff60d468897"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9c0abcb3398a6d2264791d3e1e3c12373891fdeed679723840818057844ca98b"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-sega-sg-1000-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3c5f204c33d55bf834926a415cca91e01b98e90aa7ef9b5df09b7cfc3c498ecd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emu198x/emu198x/releases/download/v0.48.4/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "99199bedb4aabeda6fad3e1bc650cc190f3b1c4d11cfb97907de904b669f0b49"
+      url "https://github.com/emu198x/emu198x/releases/download/v0.48.5/emu198x-sega-sg-1000-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fbe87f04e5451beeb38dfb33c77f8ec4904ad7f2248c1716dbcffa256701cfbe"
     end
   end
   license "GPL-2.0-or-later"
